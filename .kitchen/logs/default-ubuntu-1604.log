@@ -1,0 +1,858 @@
+I, [2017-10-28T20:47:09.076576 #85268]  INFO -- default-ubuntu-1604: -----> Cleaning up any prior instances of <default-ubuntu-1604>
+I, [2017-10-28T20:47:09.076758 #85268]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2017-10-28T20:47:09.083378 #85268]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m0.00s).
+I, [2017-10-28T20:47:09.084270 #85268]  INFO -- default-ubuntu-1604: -----> Testing <default-ubuntu-1604>
+I, [2017-10-28T20:47:09.084472 #85268]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
+I, [2017-10-28T20:47:09.427445 #85268]  INFO -- default-ubuntu-1604: Sending build context to Docker daemon  34.82kB
+I, [2017-10-28T20:47:09.557586 #85268]  INFO -- default-ubuntu-1604: Step 1/18 : FROM ubuntu:16.04
+I, [2017-10-28T20:47:13.335254 #85268]  INFO -- default-ubuntu-1604: 16.04: Pulling from library/ubuntu
+I, [2017-10-28T20:47:14.399991 #85268]  INFO -- default-ubuntu-1604: ae79f2514705: Pulling fs layer
+I, [2017-10-28T20:47:14.400134 #85268]  INFO -- default-ubuntu-1604: 5ad56d5fc149: Pulling fs layer
+I, [2017-10-28T20:47:14.400180 #85268]  INFO -- default-ubuntu-1604: 170e558760e8: Pulling fs layer
+I, [2017-10-28T20:47:14.400292 #85268]  INFO -- default-ubuntu-1604: 395460e233f5: Pulling fs layer
+I, [2017-10-28T20:47:14.400709 #85268]  INFO -- default-ubuntu-1604: 6f01dc62e444: Pulling fs layer
+I, [2017-10-28T20:47:14.400799 #85268]  INFO -- default-ubuntu-1604: 395460e233f5: Waiting
+I, [2017-10-28T20:47:14.400829 #85268]  INFO -- default-ubuntu-1604: 6f01dc62e444: Waiting
+I, [2017-10-28T20:47:16.527080 #85268]  INFO -- default-ubuntu-1604: 5ad56d5fc149: Verifying Checksum
+I, [2017-10-28T20:47:16.527229 #85268]  INFO -- default-ubuntu-1604: 5ad56d5fc149: Download complete
+I, [2017-10-28T20:47:16.528015 #85268]  INFO -- default-ubuntu-1604: 170e558760e8: Verifying Checksum
+I, [2017-10-28T20:47:16.528103 #85268]  INFO -- default-ubuntu-1604: 170e558760e8: Download complete
+I, [2017-10-28T20:47:17.926490 #85268]  INFO -- default-ubuntu-1604: 395460e233f5: Verifying Checksum
+I, [2017-10-28T20:47:17.926586 #85268]  INFO -- default-ubuntu-1604: 395460e233f5: Download complete
+I, [2017-10-28T20:47:17.958493 #85268]  INFO -- default-ubuntu-1604: 6f01dc62e444: Verifying Checksum
+I, [2017-10-28T20:47:17.958686 #85268]  INFO -- default-ubuntu-1604: 6f01dc62e444: Download complete
+I, [2017-10-28T20:47:48.056430 #85268]  INFO -- default-ubuntu-1604: ae79f2514705: Verifying Checksum
+I, [2017-10-28T20:47:48.059277 #85268]  INFO -- default-ubuntu-1604: ae79f2514705: Download complete
+I, [2017-10-28T20:47:51.927918 #85268]  INFO -- default-ubuntu-1604: ae79f2514705: Pull complete
+I, [2017-10-28T20:47:52.061799 #85268]  INFO -- default-ubuntu-1604: 5ad56d5fc149: Pull complete
+I, [2017-10-28T20:47:52.242764 #85268]  INFO -- default-ubuntu-1604: 170e558760e8: Pull complete
+I, [2017-10-28T20:47:52.473760 #85268]  INFO -- default-ubuntu-1604: 395460e233f5: Pull complete
+I, [2017-10-28T20:47:52.597483 #85268]  INFO -- default-ubuntu-1604: 6f01dc62e444: Pull complete
+I, [2017-10-28T20:47:52.606696 #85268]  INFO -- default-ubuntu-1604: Digest: sha256:506e2d5852de1d7c90d538c5332bd3cc33b9cbd26f6ca653875899c505c82687
+I, [2017-10-28T20:47:52.613618 #85268]  INFO -- default-ubuntu-1604: Status: Downloaded newer image for ubuntu:16.04
+I, [2017-10-28T20:47:52.615830 #85268]  INFO -- default-ubuntu-1604:  ---> 747cb2d60bbe
+I, [2017-10-28T20:47:52.616720 #85268]  INFO -- default-ubuntu-1604: Step 2/18 : RUN dpkg-divert --local --rename --add /sbin/initctl
+I, [2017-10-28T20:47:53.729302 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 6d3e0d5ee9dc
+I, [2017-10-28T20:47:54.083501 #85268]  INFO -- default-ubuntu-1604: Leaving 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
+I, [2017-10-28T20:47:54.675937 #85268]  INFO -- default-ubuntu-1604:  ---> 3fe72d877e67
+I, [2017-10-28T20:47:54.690532 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 6d3e0d5ee9dc
+I, [2017-10-28T20:47:54.690690 #85268]  INFO -- default-ubuntu-1604: Step 3/18 : RUN ln -sf /bin/true /sbin/initctl
+I, [2017-10-28T20:47:54.795020 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 11006cd150a9
+I, [2017-10-28T20:47:56.293956 #85268]  INFO -- default-ubuntu-1604:  ---> e16dc4a45a0d
+I, [2017-10-28T20:47:56.305118 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 11006cd150a9
+I, [2017-10-28T20:47:56.305286 #85268]  INFO -- default-ubuntu-1604: Step 4/18 : ENV DEBIAN_FRONTEND noninteractive
+I, [2017-10-28T20:47:56.419985 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 3d746579ebc3
+I, [2017-10-28T20:47:56.586291 #85268]  INFO -- default-ubuntu-1604:  ---> 5fa8284ba506
+I, [2017-10-28T20:47:56.601104 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 3d746579ebc3
+I, [2017-10-28T20:47:56.601180 #85268]  INFO -- default-ubuntu-1604: Step 5/18 : ENV container docker
+I, [2017-10-28T20:47:56.715444 #85268]  INFO -- default-ubuntu-1604:  ---> Running in ee563f3f4333
+I, [2017-10-28T20:47:57.024843 #85268]  INFO -- default-ubuntu-1604:  ---> 53887d3d5edd
+I, [2017-10-28T20:47:57.040691 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container ee563f3f4333
+I, [2017-10-28T20:47:57.040774 #85268]  INFO -- default-ubuntu-1604: Step 6/18 : RUN apt-get update
+I, [2017-10-28T20:47:57.164845 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 57f2f8864781
+I, [2017-10-28T20:47:58.273745 #85268]  INFO -- default-ubuntu-1604: Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+I, [2017-10-28T20:47:58.403066 #85268]  INFO -- default-ubuntu-1604: Get:2 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+I, [2017-10-28T20:47:59.246489 #85268]  INFO -- default-ubuntu-1604: Get:3 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [50.7 kB]
+I, [2017-10-28T20:47:59.735302 #85268]  INFO -- default-ubuntu-1604: Get:4 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [476 kB]
+I, [2017-10-28T20:47:59.753488 #85268]  INFO -- default-ubuntu-1604: Get:5 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
+I, [2017-10-28T20:48:00.083570 #85268]  INFO -- default-ubuntu-1604: Get:6 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]
+I, [2017-10-28T20:48:00.253510 #85268]  INFO -- default-ubuntu-1604: Get:7 http://archive.ubuntu.com/ubuntu xenial/universe Sources [9802 kB]
+I, [2017-10-28T20:48:04.227734 #85268]  INFO -- default-ubuntu-1604: Get:8 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [12.9 kB]
+I, [2017-10-28T20:48:04.407594 #85268]  INFO -- default-ubuntu-1604: Get:9 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [220 kB]
+I, [2017-10-28T20:48:08.014707 #85268]  INFO -- default-ubuntu-1604: Get:10 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [3485 B]
+I, [2017-10-28T20:48:09.119869 #85268]  INFO -- default-ubuntu-1604: Get:11 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1558 kB]
+I, [2017-10-28T20:48:10.154120 #85268]  INFO -- default-ubuntu-1604: Get:12 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]
+I, [2017-10-28T20:48:10.157054 #85268]  INFO -- default-ubuntu-1604: Get:13 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9827 kB]
+I, [2017-10-28T20:48:19.523307 #85268]  INFO -- default-ubuntu-1604: Get:14 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
+I, [2017-10-28T20:48:19.527639 #85268]  INFO -- default-ubuntu-1604: Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe Sources [221 kB]
+I, [2017-10-28T20:48:19.606578 #85268]  INFO -- default-ubuntu-1604: Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [833 kB]
+I, [2017-10-28T20:48:20.410558 #85268]  INFO -- default-ubuntu-1604: Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.7 kB]
+I, [2017-10-28T20:48:20.412801 #85268]  INFO -- default-ubuntu-1604: Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [692 kB]
+I, [2017-10-28T20:48:20.572583 #85268]  INFO -- default-ubuntu-1604: Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [18.1 kB]
+I, [2017-10-28T20:48:20.584943 #85268]  INFO -- default-ubuntu-1604: Get:20 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [5176 B]
+I, [2017-10-28T20:48:20.586971 #85268]  INFO -- default-ubuntu-1604: Get:21 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [6354 B]
+I, [2017-10-28T20:48:20.754044 #85268]  INFO -- default-ubuntu-1604: Fetched 24.5 MB in 22s (1068 kB/s)
+I, [2017-10-28T20:48:21.564910 #85268]  INFO -- default-ubuntu-1604: Reading package lists...
+I, [2017-10-28T20:48:22.373533 #85268]  INFO -- default-ubuntu-1604:  ---> 8d0c39108915
+I, [2017-10-28T20:48:22.394224 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 57f2f8864781
+I, [2017-10-28T20:48:22.394318 #85268]  INFO -- default-ubuntu-1604: Step 7/18 : RUN apt-get install -y sudo openssh-server curl lsb-release
+I, [2017-10-28T20:48:22.471272 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 9201c0f5f66f
+I, [2017-10-28T20:48:23.802481 #85268]  INFO -- default-ubuntu-1604: Reading package lists...
+I, [2017-10-28T20:48:24.008281 #85268]  INFO -- default-ubuntu-1604: Building dependency tree...
+I, [2017-10-28T20:48:24.009973 #85268]  INFO -- default-ubuntu-1604: Reading state information...
+I, [2017-10-28T20:48:24.198548 #85268]  INFO -- default-ubuntu-1604: The following additional packages will be installed:
+I, [2017-10-28T20:48:24.199825 #85268]  INFO -- default-ubuntu-1604:   ca-certificates dh-python distro-info-data file krb5-locales
+I, [2017-10-28T20:48:24.201346 #85268]  INFO -- default-ubuntu-1604:   libasn1-8-heimdal libbsd0 libcurl3-gnutls libedit2 libexpat1 libffi6
+I, [2017-10-28T20:48:24.201445 #85268]  INFO -- default-ubuntu-1604:   libgmp10 libgnutls30 libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal
+I, [2017-10-28T20:48:24.201544 #85268]  INFO -- default-ubuntu-1604:   libheimbase1-heimdal libheimntlm0-heimdal libhogweed4 libhx509-5-heimdal
+I, [2017-10-28T20:48:24.201945 #85268]  INFO -- default-ubuntu-1604:   libidn11 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
+I, [2017-10-28T20:48:24.202839 #85268]  INFO -- default-ubuntu-1604:   libkrb5support0 libldap-2.4-2 libmagic1 libmpdec2 libnettle6 libp11-kit0
+I, [2017-10-28T20:48:24.202968 #85268]  INFO -- default-ubuntu-1604:   libpython3-stdlib libpython3.5-minimal libpython3.5-stdlib
+I, [2017-10-28T20:48:24.203402 #85268]  INFO -- default-ubuntu-1604:   libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+I, [2017-10-28T20:48:24.204040 #85268]  INFO -- default-ubuntu-1604:   libsqlite3-0 libssl1.0.0 libtasn1-6 libwind0-heimdal libwrap0 libx11-6
+I, [2017-10-28T20:48:24.204551 #85268]  INFO -- default-ubuntu-1604:   libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxmuu1 mime-support
+I, [2017-10-28T20:48:24.205465 #85268]  INFO -- default-ubuntu-1604:   ncurses-term openssh-client openssh-sftp-server openssl python3
+I, [2017-10-28T20:48:24.205575 #85268]  INFO -- default-ubuntu-1604:   python3-chardet python3-minimal python3-pkg-resources python3-requests
+I, [2017-10-28T20:48:24.206323 #85268]  INFO -- default-ubuntu-1604:   python3-six python3-urllib3 python3.5 python3.5-minimal ssh-import-id tcpd
+I, [2017-10-28T20:48:24.206671 #85268]  INFO -- default-ubuntu-1604:   wget xauth
+I, [2017-10-28T20:48:24.209218 #85268]  INFO -- default-ubuntu-1604: Suggested packages:
+I, [2017-10-28T20:48:24.209313 #85268]  INFO -- default-ubuntu-1604:   libdpkg-perl gnutls-bin krb5-doc krb5-user libsasl2-modules-otp
+I, [2017-10-28T20:48:24.209431 #85268]  INFO -- default-ubuntu-1604:   libsasl2-modules-ldap libsasl2-modules-sql libsasl2-modules-gssapi-mit
+I, [2017-10-28T20:48:24.209536 #85268]  INFO -- default-ubuntu-1604:   | libsasl2-modules-gssapi-heimdal lsb ssh-askpass libpam-ssh keychain
+I, [2017-10-28T20:48:24.209594 #85268]  INFO -- default-ubuntu-1604:   monkeysphere rssh molly-guard ufw python3-doc python3-tk python3-venv
+I, [2017-10-28T20:48:24.209672 #85268]  INFO -- default-ubuntu-1604:   python3-setuptools python3-ndg-httpsclient python3-openssl python3-pyasn1
+I, [2017-10-28T20:48:24.209745 #85268]  INFO -- default-ubuntu-1604:   python3.5-venv python3.5-doc binutils binfmt-support
+I, [2017-10-28T20:48:24.211166 #85268]  INFO -- default-ubuntu-1604: The following NEW packages will be installed:
+I, [2017-10-28T20:48:24.211750 #85268]  INFO -- default-ubuntu-1604:   ca-certificates curl dh-python distro-info-data file krb5-locales
+I, [2017-10-28T20:48:24.212311 #85268]  INFO -- default-ubuntu-1604:   libasn1-8-heimdal libbsd0 libcurl3-gnutls libedit2 libexpat1 libffi6
+I, [2017-10-28T20:48:24.212393 #85268]  INFO -- default-ubuntu-1604:   libgmp10 libgnutls30 libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal
+I, [2017-10-28T20:48:24.212717 #85268]  INFO -- default-ubuntu-1604:   libheimbase1-heimdal libheimntlm0-heimdal libhogweed4 libhx509-5-heimdal
+I, [2017-10-28T20:48:24.212998 #85268]  INFO -- default-ubuntu-1604:   libidn11 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
+I, [2017-10-28T20:48:24.213574 #85268]  INFO -- default-ubuntu-1604:   libkrb5support0 libldap-2.4-2 libmagic1 libmpdec2 libnettle6 libp11-kit0
+I, [2017-10-28T20:48:24.213637 #85268]  INFO -- default-ubuntu-1604:   libpython3-stdlib libpython3.5-minimal libpython3.5-stdlib
+I, [2017-10-28T20:48:24.213707 #85268]  INFO -- default-ubuntu-1604:   libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+I, [2017-10-28T20:48:24.214256 #85268]  INFO -- default-ubuntu-1604:   libsqlite3-0 libssl1.0.0 libtasn1-6 libwind0-heimdal libwrap0 libx11-6
+I, [2017-10-28T20:48:24.214517 #85268]  INFO -- default-ubuntu-1604:   libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxmuu1 lsb-release
+I, [2017-10-28T20:48:24.214939 #85268]  INFO -- default-ubuntu-1604:   mime-support ncurses-term openssh-client openssh-server openssh-sftp-server
+I, [2017-10-28T20:48:24.215647 #85268]  INFO -- default-ubuntu-1604:   openssl python3 python3-chardet python3-minimal python3-pkg-resources
+I, [2017-10-28T20:48:24.215730 #85268]  INFO -- default-ubuntu-1604:   python3-requests python3-six python3-urllib3 python3.5 python3.5-minimal
+I, [2017-10-28T20:48:24.216300 #85268]  INFO -- default-ubuntu-1604:   ssh-import-id sudo tcpd wget xauth
+I, [2017-10-28T20:48:24.990524 #85268]  INFO -- default-ubuntu-1604: 0 upgraded, 73 newly installed, 0 to remove and 4 not upgraded.
+I, [2017-10-28T20:48:24.990663 #85268]  INFO -- default-ubuntu-1604: Need to get 13.5 MB of archives.
+I, [2017-10-28T20:48:24.990724 #85268]  INFO -- default-ubuntu-1604: After this operation, 64.9 MB of additional disk space will be used.
+I, [2017-10-28T20:48:24.990808 #85268]  INFO -- default-ubuntu-1604: Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libssl1.0.0 amd64 1.0.2g-1ubuntu4.8 [1081 kB]
+I, [2017-10-28T20:48:27.450034 #85268]  INFO -- default-ubuntu-1604: Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython3.5-minimal amd64 3.5.2-2ubuntu0~16.04.3 [524 kB]
+I, [2017-10-28T20:48:27.953301 #85268]  INFO -- default-ubuntu-1604: Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libexpat1 amd64 2.1.0-7ubuntu0.16.04.3 [71.2 kB]
+I, [2017-10-28T20:48:27.955704 #85268]  INFO -- default-ubuntu-1604: Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python3.5-minimal amd64 3.5.2-2ubuntu0~16.04.3 [1596 kB]
+I, [2017-10-28T20:48:32.362660 #85268]  INFO -- default-ubuntu-1604: Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 python3-minimal amd64 3.5.1-3 [23.3 kB]
+I, [2017-10-28T20:48:32.366372 #85268]  INFO -- default-ubuntu-1604: Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 mime-support all 3.59ubuntu1 [31.0 kB]
+I, [2017-10-28T20:48:32.369198 #85268]  INFO -- default-ubuntu-1604: Get:7 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpdec2 amd64 2.4.2-1 [82.6 kB]
+I, [2017-10-28T20:48:32.374051 #85268]  INFO -- default-ubuntu-1604: Get:8 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsqlite3-0 amd64 3.11.0-1ubuntu1 [396 kB]
+I, [2017-10-28T20:48:32.677447 #85268]  INFO -- default-ubuntu-1604: Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython3.5-stdlib amd64 3.5.2-2ubuntu0~16.04.3 [2132 kB]
+I, [2017-10-28T20:48:34.359656 #85268]  INFO -- default-ubuntu-1604: Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python3.5 amd64 3.5.2-2ubuntu0~16.04.3 [165 kB]
+I, [2017-10-28T20:48:34.426475 #85268]  INFO -- default-ubuntu-1604: Get:11 http://archive.ubuntu.com/ubuntu xenial/main amd64 libpython3-stdlib amd64 3.5.1-3 [6818 B]
+I, [2017-10-28T20:48:34.441631 #85268]  INFO -- default-ubuntu-1604: Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 dh-python all 2.20151103ubuntu1.1 [74.1 kB]
+I, [2017-10-28T20:48:34.470429 #85268]  INFO -- default-ubuntu-1604: Get:13 http://archive.ubuntu.com/ubuntu xenial/main amd64 python3 amd64 3.5.1-3 [8710 B]
+I, [2017-10-28T20:48:34.522505 #85268]  INFO -- default-ubuntu-1604: Get:14 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxau6 amd64 1:1.0.8-1 [8376 B]
+I, [2017-10-28T20:48:34.522607 #85268]  INFO -- default-ubuntu-1604: Get:15 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxdmcp6 amd64 1:1.1.2-1.1 [11.0 kB]
+I, [2017-10-28T20:48:34.522653 #85268]  INFO -- default-ubuntu-1604: Get:16 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxcb1 amd64 1.11.1-1ubuntu1 [40.0 kB]
+I, [2017-10-28T20:48:34.863619 #85268]  INFO -- default-ubuntu-1604: Get:17 http://archive.ubuntu.com/ubuntu xenial/main amd64 libx11-data all 2:1.6.3-1ubuntu2 [113 kB]
+I, [2017-10-28T20:48:34.878444 #85268]  INFO -- default-ubuntu-1604: Get:18 http://archive.ubuntu.com/ubuntu xenial/main amd64 libx11-6 amd64 2:1.6.3-1ubuntu2 [571 kB]
+I, [2017-10-28T20:48:34.893010 #85268]  INFO -- default-ubuntu-1604: Get:19 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxext6 amd64 2:1.3.3-1 [29.4 kB]
+I, [2017-10-28T20:48:34.894483 #85268]  INFO -- default-ubuntu-1604: Get:20 http://archive.ubuntu.com/ubuntu xenial/main amd64 libwrap0 amd64 7.6.q-25 [46.2 kB]
+I, [2017-10-28T20:48:34.896469 #85268]  INFO -- default-ubuntu-1604: Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 distro-info-data all 0.28ubuntu0.5 [4224 B]
+I, [2017-10-28T20:48:34.898827 #85268]  INFO -- default-ubuntu-1604: Get:22 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmagic1 amd64 1:5.25-2ubuntu1 [216 kB]
+I, [2017-10-28T20:48:34.954271 #85268]  INFO -- default-ubuntu-1604: Get:23 http://archive.ubuntu.com/ubuntu xenial/main amd64 file amd64 1:5.25-2ubuntu1 [21.2 kB]
+I, [2017-10-28T20:48:35.150270 #85268]  INFO -- default-ubuntu-1604: Get:24 http://archive.ubuntu.com/ubuntu xenial/main amd64 libbsd0 amd64 0.8.2-1 [41.7 kB]
+I, [2017-10-28T20:48:35.163718 #85268]  INFO -- default-ubuntu-1604: Get:25 http://archive.ubuntu.com/ubuntu xenial/main amd64 libffi6 amd64 3.2.1-4 [17.8 kB]
+I, [2017-10-28T20:48:35.172915 #85268]  INFO -- default-ubuntu-1604: Get:26 http://archive.ubuntu.com/ubuntu xenial/main amd64 libgmp10 amd64 2:6.1.0+dfsg-2 [240 kB]
+I, [2017-10-28T20:48:35.276652 #85268]  INFO -- default-ubuntu-1604: Get:27 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libnettle6 amd64 3.2-1ubuntu0.16.04.1 [93.5 kB]
+I, [2017-10-28T20:48:35.322005 #85268]  INFO -- default-ubuntu-1604: Get:28 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhogweed4 amd64 3.2-1ubuntu0.16.04.1 [136 kB]
+I, [2017-10-28T20:48:35.391713 #85268]  INFO -- default-ubuntu-1604: Get:29 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libidn11 amd64 1.32-3ubuntu1.2 [46.5 kB]
+I, [2017-10-28T20:48:35.417937 #85268]  INFO -- default-ubuntu-1604: Get:30 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libp11-kit0 amd64 0.23.2-5~ubuntu16.04.1 [105 kB]
+I, [2017-10-28T20:48:35.923213 #85268]  INFO -- default-ubuntu-1604: Get:31 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtasn1-6 amd64 4.7-3ubuntu0.16.04.2 [43.3 kB]
+I, [2017-10-28T20:48:35.924618 #85268]  INFO -- default-ubuntu-1604: Get:32 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgnutls30 amd64 3.4.10-4ubuntu1.4 [548 kB]
+I, [2017-10-28T20:48:35.936770 #85268]  INFO -- default-ubuntu-1604: Get:33 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 lsb-release all 9.20160110ubuntu0.2 [11.8 kB]
+I, [2017-10-28T20:48:35.938249 #85268]  INFO -- default-ubuntu-1604: Get:34 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 sudo amd64 1.8.16-0ubuntu1.5 [390 kB]
+I, [2017-10-28T20:48:36.209940 #85268]  INFO -- default-ubuntu-1604: Get:35 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssl amd64 1.0.2g-1ubuntu4.8 [492 kB]
+I, [2017-10-28T20:48:37.028877 #85268]  INFO -- default-ubuntu-1604: Get:36 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 ca-certificates all 20170717~16.04.1 [168 kB]
+I, [2017-10-28T20:48:37.036323 #85268]  INFO -- default-ubuntu-1604: Get:37 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 krb5-locales all 1.13.2+dfsg-5ubuntu2 [13.2 kB]
+I, [2017-10-28T20:48:37.036427 #85268]  INFO -- default-ubuntu-1604: Get:38 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libroken18-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [41.4 kB]
+I, [2017-10-28T20:48:37.037198 #85268]  INFO -- default-ubuntu-1604: Get:39 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasn1-8-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [174 kB]
+I, [2017-10-28T20:48:37.040501 #85268]  INFO -- default-ubuntu-1604: Get:40 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5support0 amd64 1.13.2+dfsg-5ubuntu2 [30.8 kB]
+I, [2017-10-28T20:48:37.041337 #85268]  INFO -- default-ubuntu-1604: Get:41 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libk5crypto3 amd64 1.13.2+dfsg-5ubuntu2 [81.2 kB]
+I, [2017-10-28T20:48:37.043359 #85268]  INFO -- default-ubuntu-1604: Get:42 http://archive.ubuntu.com/ubuntu xenial/main amd64 libkeyutils1 amd64 1.5.9-8ubuntu1 [9904 B]
+I, [2017-10-28T20:48:37.043794 #85268]  INFO -- default-ubuntu-1604: Get:43 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5-3 amd64 1.13.2+dfsg-5ubuntu2 [273 kB]
+I, [2017-10-28T20:48:37.168105 #85268]  INFO -- default-ubuntu-1604: Get:44 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgssapi-krb5-2 amd64 1.13.2+dfsg-5ubuntu2 [120 kB]
+I, [2017-10-28T20:48:37.336329 #85268]  INFO -- default-ubuntu-1604: Get:45 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhcrypto4-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [85.0 kB]
+I, [2017-10-28T20:48:37.379437 #85268]  INFO -- default-ubuntu-1604: Get:46 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libheimbase1-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [29.3 kB]
+I, [2017-10-28T20:48:37.412885 #85268]  INFO -- default-ubuntu-1604: Get:47 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libwind0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [47.8 kB]
+I, [2017-10-28T20:48:37.421429 #85268]  INFO -- default-ubuntu-1604: Get:48 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhx509-5-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [107 kB]
+I, [2017-10-28T20:48:37.499875 #85268]  INFO -- default-ubuntu-1604: Get:49 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5-26-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [202 kB]
+I, [2017-10-28T20:48:38.258599 #85268]  INFO -- default-ubuntu-1604: Get:50 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libheimntlm0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [15.1 kB]
+I, [2017-10-28T20:48:38.260311 #85268]  INFO -- default-ubuntu-1604: Get:51 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgssapi3-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [96.1 kB]
+I, [2017-10-28T20:48:38.263121 #85268]  INFO -- default-ubuntu-1604: Get:52 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-modules-db amd64 2.1.26.dfsg1-14build1 [14.5 kB]
+I, [2017-10-28T20:48:38.265204 #85268]  INFO -- default-ubuntu-1604: Get:53 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-2 amd64 2.1.26.dfsg1-14build1 [48.7 kB]
+I, [2017-10-28T20:48:38.266915 #85268]  INFO -- default-ubuntu-1604: Get:54 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libldap-2.4-2 amd64 2.4.42+dfsg-2ubuntu3.2 [160 kB]
+I, [2017-10-28T20:48:38.269993 #85268]  INFO -- default-ubuntu-1604: Get:55 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d-1ubuntu0.1 [54.4 kB]
+I, [2017-10-28T20:48:38.305502 #85268]  INFO -- default-ubuntu-1604: Get:56 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcurl3-gnutls amd64 7.47.0-1ubuntu2.4 [184 kB]
+I, [2017-10-28T20:48:38.312344 #85268]  INFO -- default-ubuntu-1604: Get:57 http://archive.ubuntu.com/ubuntu xenial/main amd64 libedit2 amd64 3.1-20150325-1ubuntu2 [76.5 kB]
+I, [2017-10-28T20:48:38.315004 #85268]  INFO -- default-ubuntu-1604: Get:58 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsasl2-modules amd64 2.1.26.dfsg1-14build1 [47.5 kB]
+I, [2017-10-28T20:48:38.534031 #85268]  INFO -- default-ubuntu-1604: Get:59 http://archive.ubuntu.com/ubuntu xenial/main amd64 libxmuu1 amd64 2:1.1.2-2 [9674 B]
+I, [2017-10-28T20:48:38.564656 #85268]  INFO -- default-ubuntu-1604: Get:60 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-client amd64 1:7.2p2-4ubuntu2.2 [587 kB]
+I, [2017-10-28T20:48:39.843641 #85268]  INFO -- default-ubuntu-1604: Get:61 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 wget amd64 1.17.1-1ubuntu1.3 [299 kB]
+I, [2017-10-28T20:48:39.853267 #85268]  INFO -- default-ubuntu-1604: Get:62 http://archive.ubuntu.com/ubuntu xenial/main amd64 xauth amd64 1:1.0.9-1ubuntu2 [22.7 kB]
+I, [2017-10-28T20:48:39.854159 #85268]  INFO -- default-ubuntu-1604: Get:63 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 curl amd64 7.47.0-1ubuntu2.4 [139 kB]
+I, [2017-10-28T20:48:39.856223 #85268]  INFO -- default-ubuntu-1604: Get:64 http://archive.ubuntu.com/ubuntu xenial/main amd64 ncurses-term all 6.0+20160213-1ubuntu1 [249 kB]
+I, [2017-10-28T20:48:39.902147 #85268]  INFO -- default-ubuntu-1604: Get:65 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-sftp-server amd64 1:7.2p2-4ubuntu2.2 [38.7 kB]
+I, [2017-10-28T20:48:39.902263 #85268]  INFO -- default-ubuntu-1604: Get:66 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-server amd64 1:7.2p2-4ubuntu2.2 [338 kB]
+I, [2017-10-28T20:48:40.192643 #85268]  INFO -- default-ubuntu-1604: Get:67 http://archive.ubuntu.com/ubuntu xenial/main amd64 python3-pkg-resources all 20.7.0-1 [79.0 kB]
+I, [2017-10-28T20:48:40.233659 #85268]  INFO -- default-ubuntu-1604: Get:68 http://archive.ubuntu.com/ubuntu xenial/main amd64 python3-chardet all 2.3.0-2 [96.2 kB]
+I, [2017-10-28T20:48:40.280383 #85268]  INFO -- default-ubuntu-1604: Get:69 http://archive.ubuntu.com/ubuntu xenial/main amd64 python3-six all 1.10.0-3 [11.0 kB]
+I, [2017-10-28T20:48:40.292368 #85268]  INFO -- default-ubuntu-1604: Get:70 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python3-urllib3 all 1.13.1-2ubuntu0.16.04.1 [57.3 kB]
+I, [2017-10-28T20:48:40.311856 #85268]  INFO -- default-ubuntu-1604: Get:71 http://archive.ubuntu.com/ubuntu xenial/main amd64 python3-requests all 2.9.1-3 [55.4 kB]
+I, [2017-10-28T20:48:40.338633 #85268]  INFO -- default-ubuntu-1604: Get:72 http://archive.ubuntu.com/ubuntu xenial/main amd64 tcpd amd64 7.6.q-25 [23.0 kB]
+I, [2017-10-28T20:48:40.349880 #85268]  INFO -- default-ubuntu-1604: Get:73 http://archive.ubuntu.com/ubuntu xenial/main amd64 ssh-import-id all 5.5-0ubuntu1 [10.2 kB]
+I, [2017-10-28T20:48:40.442782 #85268]  INFO -- default-ubuntu-1604: [91mdebconf: delaying package configuration, since apt-utils is not installed
+I, [2017-10-28T20:48:40.462761 #85268]  INFO -- default-ubuntu-1604: [0mFetched 13.5 MB in 15s (845 kB/s)
+I, [2017-10-28T20:48:40.482498 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libssl1.0.0:amd64.
+I, [2017-10-28T20:48:40.486953 #85268]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4768 files and directories currently installed.)
+I, [2017-10-28T20:48:40.487819 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4.8_amd64.deb ...
+I, [2017-10-28T20:48:40.492199 #85268]  INFO -- default-ubuntu-1604: Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4.8) ...
+I, [2017-10-28T20:48:40.636905 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libpython3.5-minimal:amd64.
+I, [2017-10-28T20:48:40.638020 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libpython3.5-minimal_3.5.2-2ubuntu0~16.04.3_amd64.deb ...
+I, [2017-10-28T20:48:40.640373 #85268]  INFO -- default-ubuntu-1604: Unpacking libpython3.5-minimal:amd64 (3.5.2-2ubuntu0~16.04.3) ...
+I, [2017-10-28T20:48:40.755449 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libexpat1:amd64.
+I, [2017-10-28T20:48:40.756496 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libexpat1_2.1.0-7ubuntu0.16.04.3_amd64.deb ...
+I, [2017-10-28T20:48:40.758864 #85268]  INFO -- default-ubuntu-1604: Unpacking libexpat1:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+I, [2017-10-28T20:48:40.788237 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3.5-minimal.
+I, [2017-10-28T20:48:40.789249 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3.5-minimal_3.5.2-2ubuntu0~16.04.3_amd64.deb ...
+I, [2017-10-28T20:48:40.794612 #85268]  INFO -- default-ubuntu-1604: Unpacking python3.5-minimal (3.5.2-2ubuntu0~16.04.3) ...
+I, [2017-10-28T20:48:40.985630 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3-minimal.
+I, [2017-10-28T20:48:40.987049 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3-minimal_3.5.1-3_amd64.deb ...
+I, [2017-10-28T20:48:40.990390 #85268]  INFO -- default-ubuntu-1604: Unpacking python3-minimal (3.5.1-3) ...
+I, [2017-10-28T20:48:41.019158 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package mime-support.
+I, [2017-10-28T20:48:41.020143 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../mime-support_3.59ubuntu1_all.deb ...
+I, [2017-10-28T20:48:41.022680 #85268]  INFO -- default-ubuntu-1604: Unpacking mime-support (3.59ubuntu1) ...
+I, [2017-10-28T20:48:41.050195 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libmpdec2:amd64.
+I, [2017-10-28T20:48:41.051226 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libmpdec2_2.4.2-1_amd64.deb ...
+I, [2017-10-28T20:48:41.053887 #85268]  INFO -- default-ubuntu-1604: Unpacking libmpdec2:amd64 (2.4.2-1) ...
+I, [2017-10-28T20:48:41.082255 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libsqlite3-0:amd64.
+I, [2017-10-28T20:48:41.083403 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1_amd64.deb ...
+I, [2017-10-28T20:48:41.086087 #85268]  INFO -- default-ubuntu-1604: Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
+I, [2017-10-28T20:48:41.140725 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libpython3.5-stdlib:amd64.
+I, [2017-10-28T20:48:41.141776 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libpython3.5-stdlib_3.5.2-2ubuntu0~16.04.3_amd64.deb ...
+I, [2017-10-28T20:48:41.144246 #85268]  INFO -- default-ubuntu-1604: Unpacking libpython3.5-stdlib:amd64 (3.5.2-2ubuntu0~16.04.3) ...
+I, [2017-10-28T20:48:41.476591 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3.5.
+I, [2017-10-28T20:48:41.477934 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3.5_3.5.2-2ubuntu0~16.04.3_amd64.deb ...
+I, [2017-10-28T20:48:41.480411 #85268]  INFO -- default-ubuntu-1604: Unpacking python3.5 (3.5.2-2ubuntu0~16.04.3) ...
+I, [2017-10-28T20:48:41.511172 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libpython3-stdlib:amd64.
+I, [2017-10-28T20:48:41.512280 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libpython3-stdlib_3.5.1-3_amd64.deb ...
+I, [2017-10-28T20:48:41.514934 #85268]  INFO -- default-ubuntu-1604: Unpacking libpython3-stdlib:amd64 (3.5.1-3) ...
+I, [2017-10-28T20:48:41.535320 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package dh-python.
+I, [2017-10-28T20:48:41.536348 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../dh-python_2.20151103ubuntu1.1_all.deb ...
+I, [2017-10-28T20:48:41.539728 #85268]  INFO -- default-ubuntu-1604: Unpacking dh-python (2.20151103ubuntu1.1) ...
+I, [2017-10-28T20:48:41.564417 #85268]  INFO -- default-ubuntu-1604: Processing triggers for libc-bin (2.23-0ubuntu9) ...
+I, [2017-10-28T20:48:41.587274 #85268]  INFO -- default-ubuntu-1604: Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4.8) ...
+I, [2017-10-28T20:48:41.662362 #85268]  INFO -- default-ubuntu-1604: Setting up libpython3.5-minimal:amd64 (3.5.2-2ubuntu0~16.04.3) ...
+I, [2017-10-28T20:48:41.672266 #85268]  INFO -- default-ubuntu-1604: Setting up libexpat1:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+I, [2017-10-28T20:48:41.677934 #85268]  INFO -- default-ubuntu-1604: Setting up python3.5-minimal (3.5.2-2ubuntu0~16.04.3) ...
+I, [2017-10-28T20:48:42.163484 #85268]  INFO -- default-ubuntu-1604: Setting up python3-minimal (3.5.1-3) ...
+I, [2017-10-28T20:48:42.329979 #85268]  INFO -- default-ubuntu-1604: Processing triggers for libc-bin (2.23-0ubuntu9) ...
+I, [2017-10-28T20:48:42.358281 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3.
+I, [2017-10-28T20:48:42.365009 #85268]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5744 files and directories currently installed.)
+I, [2017-10-28T20:48:42.366243 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3_3.5.1-3_amd64.deb ...
+I, [2017-10-28T20:48:42.371095 #85268]  INFO -- default-ubuntu-1604: Unpacking python3 (3.5.1-3) ...
+I, [2017-10-28T20:48:42.398714 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libxau6:amd64.
+I, [2017-10-28T20:48:42.400910 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
+I, [2017-10-28T20:48:42.404551 #85268]  INFO -- default-ubuntu-1604: Unpacking libxau6:amd64 (1:1.0.8-1) ...
+I, [2017-10-28T20:48:42.424848 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libxdmcp6:amd64.
+I, [2017-10-28T20:48:42.426558 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libxdmcp6_1%3a1.1.2-1.1_amd64.deb ...
+I, [2017-10-28T20:48:42.431418 #85268]  INFO -- default-ubuntu-1604: Unpacking libxdmcp6:amd64 (1:1.1.2-1.1) ...
+I, [2017-10-28T20:48:42.453035 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libxcb1:amd64.
+I, [2017-10-28T20:48:42.454271 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libxcb1_1.11.1-1ubuntu1_amd64.deb ...
+I, [2017-10-28T20:48:42.457082 #85268]  INFO -- default-ubuntu-1604: Unpacking libxcb1:amd64 (1.11.1-1ubuntu1) ...
+I, [2017-10-28T20:48:42.478696 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libx11-data.
+I, [2017-10-28T20:48:42.480133 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libx11-data_2%3a1.6.3-1ubuntu2_all.deb ...
+I, [2017-10-28T20:48:42.483562 #85268]  INFO -- default-ubuntu-1604: Unpacking libx11-data (2:1.6.3-1ubuntu2) ...
+I, [2017-10-28T20:48:42.561369 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libx11-6:amd64.
+I, [2017-10-28T20:48:42.561474 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libx11-6_2%3a1.6.3-1ubuntu2_amd64.deb ...
+I, [2017-10-28T20:48:42.563981 #85268]  INFO -- default-ubuntu-1604: Unpacking libx11-6:amd64 (2:1.6.3-1ubuntu2) ...
+I, [2017-10-28T20:48:42.646817 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libxext6:amd64.
+I, [2017-10-28T20:48:42.646930 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libxext6_2%3a1.3.3-1_amd64.deb ...
+I, [2017-10-28T20:48:42.649117 #85268]  INFO -- default-ubuntu-1604: Unpacking libxext6:amd64 (2:1.3.3-1) ...
+I, [2017-10-28T20:48:42.675255 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libwrap0:amd64.
+I, [2017-10-28T20:48:42.675349 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libwrap0_7.6.q-25_amd64.deb ...
+I, [2017-10-28T20:48:42.677646 #85268]  INFO -- default-ubuntu-1604: Unpacking libwrap0:amd64 (7.6.q-25) ...
+I, [2017-10-28T20:48:42.701712 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package distro-info-data.
+I, [2017-10-28T20:48:42.701817 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../distro-info-data_0.28ubuntu0.5_all.deb ...
+I, [2017-10-28T20:48:42.704585 #85268]  INFO -- default-ubuntu-1604: Unpacking distro-info-data (0.28ubuntu0.5) ...
+I, [2017-10-28T20:48:42.727566 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libmagic1:amd64.
+I, [2017-10-28T20:48:42.729110 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libmagic1_1%3a5.25-2ubuntu1_amd64.deb ...
+I, [2017-10-28T20:48:42.732386 #85268]  INFO -- default-ubuntu-1604: Unpacking libmagic1:amd64 (1:5.25-2ubuntu1) ...
+I, [2017-10-28T20:48:42.794287 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package file.
+I, [2017-10-28T20:48:42.794372 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../file_1%3a5.25-2ubuntu1_amd64.deb ...
+I, [2017-10-28T20:48:42.797591 #85268]  INFO -- default-ubuntu-1604: Unpacking file (1:5.25-2ubuntu1) ...
+I, [2017-10-28T20:48:42.823852 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libbsd0:amd64.
+I, [2017-10-28T20:48:42.823949 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libbsd0_0.8.2-1_amd64.deb ...
+I, [2017-10-28T20:48:42.826303 #85268]  INFO -- default-ubuntu-1604: Unpacking libbsd0:amd64 (0.8.2-1) ...
+I, [2017-10-28T20:48:42.852937 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libffi6:amd64.
+I, [2017-10-28T20:48:42.853002 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...
+I, [2017-10-28T20:48:42.855328 #85268]  INFO -- default-ubuntu-1604: Unpacking libffi6:amd64 (3.2.1-4) ...
+I, [2017-10-28T20:48:42.880756 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libgmp10:amd64.
+I, [2017-10-28T20:48:42.882532 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libgmp10_2%3a6.1.0+dfsg-2_amd64.deb ...
+I, [2017-10-28T20:48:42.885969 #85268]  INFO -- default-ubuntu-1604: Unpacking libgmp10:amd64 (2:6.1.0+dfsg-2) ...
+I, [2017-10-28T20:48:42.930428 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libnettle6:amd64.
+I, [2017-10-28T20:48:42.930512 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libnettle6_3.2-1ubuntu0.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:43.010569 #85268]  INFO -- default-ubuntu-1604: Unpacking libnettle6:amd64 (3.2-1ubuntu0.16.04.1) ...
+I, [2017-10-28T20:48:43.010667 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libhogweed4:amd64.
+I, [2017-10-28T20:48:43.010703 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libhogweed4_3.2-1ubuntu0.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:43.010827 #85268]  INFO -- default-ubuntu-1604: Unpacking libhogweed4:amd64 (3.2-1ubuntu0.16.04.1) ...
+I, [2017-10-28T20:48:43.045863 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libidn11:amd64.
+I, [2017-10-28T20:48:43.045933 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libidn11_1.32-3ubuntu1.2_amd64.deb ...
+I, [2017-10-28T20:48:43.048314 #85268]  INFO -- default-ubuntu-1604: Unpacking libidn11:amd64 (1.32-3ubuntu1.2) ...
+I, [2017-10-28T20:48:43.080037 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libp11-kit0:amd64.
+I, [2017-10-28T20:48:43.080112 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libp11-kit0_0.23.2-5~ubuntu16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:43.082358 #85268]  INFO -- default-ubuntu-1604: Unpacking libp11-kit0:amd64 (0.23.2-5~ubuntu16.04.1) ...
+I, [2017-10-28T20:48:43.117183 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libtasn1-6:amd64.
+I, [2017-10-28T20:48:43.118652 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libtasn1-6_4.7-3ubuntu0.16.04.2_amd64.deb ...
+I, [2017-10-28T20:48:43.121914 #85268]  INFO -- default-ubuntu-1604: Unpacking libtasn1-6:amd64 (4.7-3ubuntu0.16.04.2) ...
+I, [2017-10-28T20:48:43.148087 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libgnutls30:amd64.
+I, [2017-10-28T20:48:43.148174 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libgnutls30_3.4.10-4ubuntu1.4_amd64.deb ...
+I, [2017-10-28T20:48:43.150834 #85268]  INFO -- default-ubuntu-1604: Unpacking libgnutls30:amd64 (3.4.10-4ubuntu1.4) ...
+I, [2017-10-28T20:48:43.240605 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package lsb-release.
+I, [2017-10-28T20:48:43.240689 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../lsb-release_9.20160110ubuntu0.2_all.deb ...
+I, [2017-10-28T20:48:43.243522 #85268]  INFO -- default-ubuntu-1604: Unpacking lsb-release (9.20160110ubuntu0.2) ...
+I, [2017-10-28T20:48:43.269385 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package sudo.
+I, [2017-10-28T20:48:43.270872 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../sudo_1.8.16-0ubuntu1.5_amd64.deb ...
+I, [2017-10-28T20:48:43.277513 #85268]  INFO -- default-ubuntu-1604: Unpacking sudo (1.8.16-0ubuntu1.5) ...
+I, [2017-10-28T20:48:43.379412 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package openssl.
+I, [2017-10-28T20:48:43.379475 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../openssl_1.0.2g-1ubuntu4.8_amd64.deb ...
+I, [2017-10-28T20:48:43.384337 #85268]  INFO -- default-ubuntu-1604: Unpacking openssl (1.0.2g-1ubuntu4.8) ...
+I, [2017-10-28T20:48:43.523088 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package ca-certificates.
+I, [2017-10-28T20:48:43.525771 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../ca-certificates_20170717~16.04.1_all.deb ...
+I, [2017-10-28T20:48:43.530046 #85268]  INFO -- default-ubuntu-1604: Unpacking ca-certificates (20170717~16.04.1) ...
+I, [2017-10-28T20:48:43.627696 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package krb5-locales.
+I, [2017-10-28T20:48:43.629397 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../krb5-locales_1.13.2+dfsg-5ubuntu2_all.deb ...
+I, [2017-10-28T20:48:43.633022 #85268]  INFO -- default-ubuntu-1604: Unpacking krb5-locales (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:43.657807 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libroken18-heimdal:amd64.
+I, [2017-10-28T20:48:43.659198 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libroken18-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:43.662520 #85268]  INFO -- default-ubuntu-1604: Unpacking libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:43.689694 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libasn1-8-heimdal:amd64.
+I, [2017-10-28T20:48:43.691137 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libasn1-8-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:43.694342 #85268]  INFO -- default-ubuntu-1604: Unpacking libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:43.737244 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libkrb5support0:amd64.
+I, [2017-10-28T20:48:43.737306 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libkrb5support0_1.13.2+dfsg-5ubuntu2_amd64.deb ...
+I, [2017-10-28T20:48:43.739824 #85268]  INFO -- default-ubuntu-1604: Unpacking libkrb5support0:amd64 (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:43.767700 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libk5crypto3:amd64.
+I, [2017-10-28T20:48:43.767780 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libk5crypto3_1.13.2+dfsg-5ubuntu2_amd64.deb ...
+I, [2017-10-28T20:48:43.770502 #85268]  INFO -- default-ubuntu-1604: Unpacking libk5crypto3:amd64 (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:43.809651 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libkeyutils1:amd64.
+I, [2017-10-28T20:48:43.809752 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libkeyutils1_1.5.9-8ubuntu1_amd64.deb ...
+I, [2017-10-28T20:48:43.812371 #85268]  INFO -- default-ubuntu-1604: Unpacking libkeyutils1:amd64 (1.5.9-8ubuntu1) ...
+I, [2017-10-28T20:48:43.843110 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libkrb5-3:amd64.
+I, [2017-10-28T20:48:43.843205 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libkrb5-3_1.13.2+dfsg-5ubuntu2_amd64.deb ...
+I, [2017-10-28T20:48:43.846284 #85268]  INFO -- default-ubuntu-1604: Unpacking libkrb5-3:amd64 (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:43.911228 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libgssapi-krb5-2:amd64.
+I, [2017-10-28T20:48:43.911300 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libgssapi-krb5-2_1.13.2+dfsg-5ubuntu2_amd64.deb ...
+I, [2017-10-28T20:48:43.914007 #85268]  INFO -- default-ubuntu-1604: Unpacking libgssapi-krb5-2:amd64 (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:43.953607 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libhcrypto4-heimdal:amd64.
+I, [2017-10-28T20:48:43.953702 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libhcrypto4-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:43.956197 #85268]  INFO -- default-ubuntu-1604: Unpacking libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:43.989776 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libheimbase1-heimdal:amd64.
+I, [2017-10-28T20:48:43.991173 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libheimbase1-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:43.993964 #85268]  INFO -- default-ubuntu-1604: Unpacking libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:44.019646 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libwind0-heimdal:amd64.
+I, [2017-10-28T20:48:44.021371 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libwind0-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:44.024442 #85268]  INFO -- default-ubuntu-1604: Unpacking libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:44.051447 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libhx509-5-heimdal:amd64.
+I, [2017-10-28T20:48:44.052896 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libhx509-5-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:44.055915 #85268]  INFO -- default-ubuntu-1604: Unpacking libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:44.089403 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libkrb5-26-heimdal:amd64.
+I, [2017-10-28T20:48:44.089493 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libkrb5-26-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:44.091967 #85268]  INFO -- default-ubuntu-1604: Unpacking libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:44.137916 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libheimntlm0-heimdal:amd64.
+I, [2017-10-28T20:48:44.137995 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libheimntlm0-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:44.140767 #85268]  INFO -- default-ubuntu-1604: Unpacking libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:44.171339 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libgssapi3-heimdal:amd64.
+I, [2017-10-28T20:48:44.171414 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libgssapi3-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+I, [2017-10-28T20:48:44.174079 #85268]  INFO -- default-ubuntu-1604: Unpacking libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:44.209239 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libsasl2-modules-db:amd64.
+I, [2017-10-28T20:48:44.209386 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-14build1_amd64.deb ...
+I, [2017-10-28T20:48:44.212571 #85268]  INFO -- default-ubuntu-1604: Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-14build1) ...
+I, [2017-10-28T20:48:44.240136 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libsasl2-2:amd64.
+I, [2017-10-28T20:48:44.240218 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-14build1_amd64.deb ...
+I, [2017-10-28T20:48:44.242706 #85268]  INFO -- default-ubuntu-1604: Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-14build1) ...
+I, [2017-10-28T20:48:44.277894 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libldap-2.4-2:amd64.
+I, [2017-10-28T20:48:44.277966 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libldap-2.4-2_2.4.42+dfsg-2ubuntu3.2_amd64.deb ...
+I, [2017-10-28T20:48:44.280916 #85268]  INFO -- default-ubuntu-1604: Unpacking libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.2) ...
+I, [2017-10-28T20:48:44.332696 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package librtmp1:amd64.
+I, [2017-10-28T20:48:44.332778 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../librtmp1_2.4+20151223.gitfa8646d-1ubuntu0.1_amd64.deb ...
+I, [2017-10-28T20:48:44.336315 #85268]  INFO -- default-ubuntu-1604: Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d-1ubuntu0.1) ...
+I, [2017-10-28T20:48:44.371160 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libcurl3-gnutls:amd64.
+I, [2017-10-28T20:48:44.374578 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libcurl3-gnutls_7.47.0-1ubuntu2.4_amd64.deb ...
+I, [2017-10-28T20:48:44.378824 #85268]  INFO -- default-ubuntu-1604: Unpacking libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.4) ...
+I, [2017-10-28T20:48:44.436045 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libedit2:amd64.
+I, [2017-10-28T20:48:44.436131 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libedit2_3.1-20150325-1ubuntu2_amd64.deb ...
+I, [2017-10-28T20:48:44.438643 #85268]  INFO -- default-ubuntu-1604: Unpacking libedit2:amd64 (3.1-20150325-1ubuntu2) ...
+I, [2017-10-28T20:48:44.526670 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libsasl2-modules:amd64.
+I, [2017-10-28T20:48:44.526770 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libsasl2-modules_2.1.26.dfsg1-14build1_amd64.deb ...
+I, [2017-10-28T20:48:44.526801 #85268]  INFO -- default-ubuntu-1604: Unpacking libsasl2-modules:amd64 (2.1.26.dfsg1-14build1) ...
+I, [2017-10-28T20:48:44.540081 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package libxmuu1:amd64.
+I, [2017-10-28T20:48:44.540159 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../libxmuu1_2%3a1.1.2-2_amd64.deb ...
+I, [2017-10-28T20:48:44.542246 #85268]  INFO -- default-ubuntu-1604: Unpacking libxmuu1:amd64 (2:1.1.2-2) ...
+I, [2017-10-28T20:48:44.591325 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package openssh-client.
+I, [2017-10-28T20:48:44.593237 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../openssh-client_1%3a7.2p2-4ubuntu2.2_amd64.deb ...
+I, [2017-10-28T20:48:44.596257 #85268]  INFO -- default-ubuntu-1604: Unpacking openssh-client (1:7.2p2-4ubuntu2.2) ...
+I, [2017-10-28T20:48:44.774065 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package wget.
+I, [2017-10-28T20:48:44.774148 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../wget_1.17.1-1ubuntu1.3_amd64.deb ...
+I, [2017-10-28T20:48:44.777441 #85268]  INFO -- default-ubuntu-1604: Unpacking wget (1.17.1-1ubuntu1.3) ...
+I, [2017-10-28T20:48:44.839033 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package xauth.
+I, [2017-10-28T20:48:44.840826 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../xauth_1%3a1.0.9-1ubuntu2_amd64.deb ...
+I, [2017-10-28T20:48:44.843937 #85268]  INFO -- default-ubuntu-1604: Unpacking xauth (1:1.0.9-1ubuntu2) ...
+I, [2017-10-28T20:48:44.865119 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package curl.
+I, [2017-10-28T20:48:44.866905 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../curl_7.47.0-1ubuntu2.4_amd64.deb ...
+I, [2017-10-28T20:48:44.869923 #85268]  INFO -- default-ubuntu-1604: Unpacking curl (7.47.0-1ubuntu2.4) ...
+I, [2017-10-28T20:48:44.909113 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package ncurses-term.
+I, [2017-10-28T20:48:44.911653 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../ncurses-term_6.0+20160213-1ubuntu1_all.deb ...
+I, [2017-10-28T20:48:44.916733 #85268]  INFO -- default-ubuntu-1604: Unpacking ncurses-term (6.0+20160213-1ubuntu1) ...
+I, [2017-10-28T20:48:45.427895 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package openssh-sftp-server.
+I, [2017-10-28T20:48:45.427962 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../openssh-sftp-server_1%3a7.2p2-4ubuntu2.2_amd64.deb ...
+I, [2017-10-28T20:48:45.431085 #85268]  INFO -- default-ubuntu-1604: Unpacking openssh-sftp-server (1:7.2p2-4ubuntu2.2) ...
+I, [2017-10-28T20:48:45.468421 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package openssh-server.
+I, [2017-10-28T20:48:45.486376 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../openssh-server_1%3a7.2p2-4ubuntu2.2_amd64.deb ...
+I, [2017-10-28T20:48:45.500072 #85268]  INFO -- default-ubuntu-1604: Unpacking openssh-server (1:7.2p2-4ubuntu2.2) ...
+I, [2017-10-28T20:48:45.728863 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3-pkg-resources.
+I, [2017-10-28T20:48:45.728995 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3-pkg-resources_20.7.0-1_all.deb ...
+I, [2017-10-28T20:48:45.731367 #85268]  INFO -- default-ubuntu-1604: Unpacking python3-pkg-resources (20.7.0-1) ...
+I, [2017-10-28T20:48:45.774670 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3-chardet.
+I, [2017-10-28T20:48:45.774747 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3-chardet_2.3.0-2_all.deb ...
+I, [2017-10-28T20:48:45.777261 #85268]  INFO -- default-ubuntu-1604: Unpacking python3-chardet (2.3.0-2) ...
+I, [2017-10-28T20:48:45.839393 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3-six.
+I, [2017-10-28T20:48:45.841818 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3-six_1.10.0-3_all.deb ...
+I, [2017-10-28T20:48:45.849563 #85268]  INFO -- default-ubuntu-1604: Unpacking python3-six (1.10.0-3) ...
+I, [2017-10-28T20:48:45.882036 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3-urllib3.
+I, [2017-10-28T20:48:45.883850 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3-urllib3_1.13.1-2ubuntu0.16.04.1_all.deb ...
+I, [2017-10-28T20:48:45.887466 #85268]  INFO -- default-ubuntu-1604: Unpacking python3-urllib3 (1.13.1-2ubuntu0.16.04.1) ...
+I, [2017-10-28T20:48:45.933093 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package python3-requests.
+I, [2017-10-28T20:48:45.933174 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../python3-requests_2.9.1-3_all.deb ...
+I, [2017-10-28T20:48:45.935788 #85268]  INFO -- default-ubuntu-1604: Unpacking python3-requests (2.9.1-3) ...
+I, [2017-10-28T20:48:45.968702 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package tcpd.
+I, [2017-10-28T20:48:45.978883 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../tcpd_7.6.q-25_amd64.deb ...
+I, [2017-10-28T20:48:45.982292 #85268]  INFO -- default-ubuntu-1604: Unpacking tcpd (7.6.q-25) ...
+I, [2017-10-28T20:48:46.011966 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package ssh-import-id.
+I, [2017-10-28T20:48:46.013774 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../ssh-import-id_5.5-0ubuntu1_all.deb ...
+I, [2017-10-28T20:48:46.016423 #85268]  INFO -- default-ubuntu-1604: Unpacking ssh-import-id (5.5-0ubuntu1) ...
+I, [2017-10-28T20:48:46.034538 #85268]  INFO -- default-ubuntu-1604: Processing triggers for libc-bin (2.23-0ubuntu9) ...
+I, [2017-10-28T20:48:46.047031 #85268]  INFO -- default-ubuntu-1604: Processing triggers for systemd (229-4ubuntu19) ...
+I, [2017-10-28T20:48:46.079601 #85268]  INFO -- default-ubuntu-1604: Setting up mime-support (3.59ubuntu1) ...
+I, [2017-10-28T20:48:46.112017 #85268]  INFO -- default-ubuntu-1604: Setting up libmpdec2:amd64 (2.4.2-1) ...
+I, [2017-10-28T20:48:46.131633 #85268]  INFO -- default-ubuntu-1604: Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
+I, [2017-10-28T20:48:46.161117 #85268]  INFO -- default-ubuntu-1604: Setting up libpython3.5-stdlib:amd64 (3.5.2-2ubuntu0~16.04.3) ...
+I, [2017-10-28T20:48:46.205252 #85268]  INFO -- default-ubuntu-1604: Setting up python3.5 (3.5.2-2ubuntu0~16.04.3) ...
+I, [2017-10-28T20:48:48.367953 #85268]  INFO -- default-ubuntu-1604: Setting up libpython3-stdlib:amd64 (3.5.1-3) ...
+I, [2017-10-28T20:48:48.378318 #85268]  INFO -- default-ubuntu-1604: Setting up libxau6:amd64 (1:1.0.8-1) ...
+I, [2017-10-28T20:48:48.391688 #85268]  INFO -- default-ubuntu-1604: Setting up libxdmcp6:amd64 (1:1.1.2-1.1) ...
+I, [2017-10-28T20:48:48.399742 #85268]  INFO -- default-ubuntu-1604: Setting up libxcb1:amd64 (1.11.1-1ubuntu1) ...
+I, [2017-10-28T20:48:48.408276 #85268]  INFO -- default-ubuntu-1604: Setting up libx11-data (2:1.6.3-1ubuntu2) ...
+I, [2017-10-28T20:48:48.415613 #85268]  INFO -- default-ubuntu-1604: Setting up libx11-6:amd64 (2:1.6.3-1ubuntu2) ...
+I, [2017-10-28T20:48:48.428469 #85268]  INFO -- default-ubuntu-1604: Setting up libxext6:amd64 (2:1.3.3-1) ...
+I, [2017-10-28T20:48:48.441289 #85268]  INFO -- default-ubuntu-1604: Setting up libwrap0:amd64 (7.6.q-25) ...
+I, [2017-10-28T20:48:48.470856 #85268]  INFO -- default-ubuntu-1604: Setting up distro-info-data (0.28ubuntu0.5) ...
+I, [2017-10-28T20:48:48.478856 #85268]  INFO -- default-ubuntu-1604: Setting up libmagic1:amd64 (1:5.25-2ubuntu1) ...
+I, [2017-10-28T20:48:48.491394 #85268]  INFO -- default-ubuntu-1604: Setting up file (1:5.25-2ubuntu1) ...
+I, [2017-10-28T20:48:48.499187 #85268]  INFO -- default-ubuntu-1604: Setting up libbsd0:amd64 (0.8.2-1) ...
+I, [2017-10-28T20:48:48.509343 #85268]  INFO -- default-ubuntu-1604: Setting up libffi6:amd64 (3.2.1-4) ...
+I, [2017-10-28T20:48:48.516802 #85268]  INFO -- default-ubuntu-1604: Setting up libgmp10:amd64 (2:6.1.0+dfsg-2) ...
+I, [2017-10-28T20:48:48.524239 #85268]  INFO -- default-ubuntu-1604: Setting up libnettle6:amd64 (3.2-1ubuntu0.16.04.1) ...
+I, [2017-10-28T20:48:48.531001 #85268]  INFO -- default-ubuntu-1604: Setting up libhogweed4:amd64 (3.2-1ubuntu0.16.04.1) ...
+I, [2017-10-28T20:48:48.537017 #85268]  INFO -- default-ubuntu-1604: Setting up libidn11:amd64 (1.32-3ubuntu1.2) ...
+I, [2017-10-28T20:48:48.543249 #85268]  INFO -- default-ubuntu-1604: Setting up libp11-kit0:amd64 (0.23.2-5~ubuntu16.04.1) ...
+I, [2017-10-28T20:48:48.549482 #85268]  INFO -- default-ubuntu-1604: Setting up libtasn1-6:amd64 (4.7-3ubuntu0.16.04.2) ...
+I, [2017-10-28T20:48:48.555383 #85268]  INFO -- default-ubuntu-1604: Setting up libgnutls30:amd64 (3.4.10-4ubuntu1.4) ...
+I, [2017-10-28T20:48:48.562308 #85268]  INFO -- default-ubuntu-1604: Setting up sudo (1.8.16-0ubuntu1.5) ...
+I, [2017-10-28T20:48:48.582178 #85268]  INFO -- default-ubuntu-1604: Setting up openssl (1.0.2g-1ubuntu4.8) ...
+I, [2017-10-28T20:48:48.593271 #85268]  INFO -- default-ubuntu-1604: Setting up ca-certificates (20170717~16.04.1) ...
+I, [2017-10-28T20:48:50.220152 #85268]  INFO -- default-ubuntu-1604: Setting up krb5-locales (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:50.226517 #85268]  INFO -- default-ubuntu-1604: Setting up libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.233043 #85268]  INFO -- default-ubuntu-1604: Setting up libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.239205 #85268]  INFO -- default-ubuntu-1604: Setting up libkrb5support0:amd64 (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:50.245170 #85268]  INFO -- default-ubuntu-1604: Setting up libk5crypto3:amd64 (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:50.251354 #85268]  INFO -- default-ubuntu-1604: Setting up libkeyutils1:amd64 (1.5.9-8ubuntu1) ...
+I, [2017-10-28T20:48:50.257571 #85268]  INFO -- default-ubuntu-1604: Setting up libkrb5-3:amd64 (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:50.263747 #85268]  INFO -- default-ubuntu-1604: Setting up libgssapi-krb5-2:amd64 (1.13.2+dfsg-5ubuntu2) ...
+I, [2017-10-28T20:48:50.272708 #85268]  INFO -- default-ubuntu-1604: Setting up libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.278936 #85268]  INFO -- default-ubuntu-1604: Setting up libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.285369 #85268]  INFO -- default-ubuntu-1604: Setting up libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.291259 #85268]  INFO -- default-ubuntu-1604: Setting up libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.317180 #85268]  INFO -- default-ubuntu-1604: Setting up libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.317248 #85268]  INFO -- default-ubuntu-1604: Setting up libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.346224 #85268]  INFO -- default-ubuntu-1604: Setting up libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+I, [2017-10-28T20:48:50.346323 #85268]  INFO -- default-ubuntu-1604: Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-14build1) ...
+I, [2017-10-28T20:48:50.346364 #85268]  INFO -- default-ubuntu-1604: Setting up libsasl2-2:amd64 (2.1.26.dfsg1-14build1) ...
+I, [2017-10-28T20:48:50.351879 #85268]  INFO -- default-ubuntu-1604: Setting up libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.2) ...
+I, [2017-10-28T20:48:50.364181 #85268]  INFO -- default-ubuntu-1604: Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d-1ubuntu0.1) ...
+I, [2017-10-28T20:48:50.371033 #85268]  INFO -- default-ubuntu-1604: Setting up libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.4) ...
+I, [2017-10-28T20:48:50.377482 #85268]  INFO -- default-ubuntu-1604: Setting up libedit2:amd64 (3.1-20150325-1ubuntu2) ...
+I, [2017-10-28T20:48:50.383913 #85268]  INFO -- default-ubuntu-1604: Setting up libsasl2-modules:amd64 (2.1.26.dfsg1-14build1) ...
+I, [2017-10-28T20:48:50.391738 #85268]  INFO -- default-ubuntu-1604: Setting up libxmuu1:amd64 (2:1.1.2-2) ...
+I, [2017-10-28T20:48:50.397828 #85268]  INFO -- default-ubuntu-1604: Setting up openssh-client (1:7.2p2-4ubuntu2.2) ...
+I, [2017-10-28T20:48:50.465552 #85268]  INFO -- default-ubuntu-1604: Setting up wget (1.17.1-1ubuntu1.3) ...
+I, [2017-10-28T20:48:50.474106 #85268]  INFO -- default-ubuntu-1604: Setting up xauth (1:1.0.9-1ubuntu2) ...
+I, [2017-10-28T20:48:50.480230 #85268]  INFO -- default-ubuntu-1604: Setting up curl (7.47.0-1ubuntu2.4) ...
+I, [2017-10-28T20:48:50.486258 #85268]  INFO -- default-ubuntu-1604: Setting up ncurses-term (6.0+20160213-1ubuntu1) ...
+I, [2017-10-28T20:48:50.491839 #85268]  INFO -- default-ubuntu-1604: Setting up openssh-sftp-server (1:7.2p2-4ubuntu2.2) ...
+I, [2017-10-28T20:48:50.498052 #85268]  INFO -- default-ubuntu-1604: Setting up openssh-server (1:7.2p2-4ubuntu2.2) ...
+I, [2017-10-28T20:48:50.671357 #85268]  INFO -- default-ubuntu-1604: Creating SSH2 RSA key; this may take some time ...
+I, [2017-10-28T20:48:50.674895 #85268]  INFO -- default-ubuntu-1604: 2048 SHA256:LZ4vxyz6WPDoegYqESnJMtx1TTRSG1oWFJOVthyx0KU root@9201c0f5f66f (RSA)
+I, [2017-10-28T20:48:50.759841 #85268]  INFO -- default-ubuntu-1604: Creating SSH2 DSA key; this may take some time ...
+I, [2017-10-28T20:48:50.762988 #85268]  INFO -- default-ubuntu-1604: 1024 SHA256:aWPOg3ZNyAvFEBMfadRE1eoXBzUAGFFH4KX+siOc8IY root@9201c0f5f66f (DSA)
+I, [2017-10-28T20:48:50.767509 #85268]  INFO -- default-ubuntu-1604: Creating SSH2 ECDSA key; this may take some time ...
+I, [2017-10-28T20:48:50.770373 #85268]  INFO -- default-ubuntu-1604: 256 SHA256:otqR/S5vz236LYpv8YqArCzgWw2JbKuJjgs/xAVdGqk root@9201c0f5f66f (ECDSA)
+I, [2017-10-28T20:48:50.775387 #85268]  INFO -- default-ubuntu-1604: Creating SSH2 ED25519 key; this may take some time ...
+I, [2017-10-28T20:48:50.778317 #85268]  INFO -- default-ubuntu-1604: 256 SHA256:OoTqZtenUmJCgD6MBgaQS55+1aNJelJnjMJ62Ievd84 root@9201c0f5f66f (ED25519)
+I, [2017-10-28T20:48:51.052692 #85268]  INFO -- default-ubuntu-1604: invoke-rc.d: could not determine current runlevel
+I, [2017-10-28T20:48:51.056869 #85268]  INFO -- default-ubuntu-1604: invoke-rc.d: policy-rc.d denied execution of start.
+I, [2017-10-28T20:48:51.076604 #85268]  INFO -- default-ubuntu-1604: Setting up tcpd (7.6.q-25) ...
+I, [2017-10-28T20:48:51.084616 #85268]  INFO -- default-ubuntu-1604: Setting up dh-python (2.20151103ubuntu1.1) ...
+I, [2017-10-28T20:48:51.278489 #85268]  INFO -- default-ubuntu-1604: Setting up python3 (3.5.1-3) ...
+I, [2017-10-28T20:48:51.638084 #85268]  INFO -- default-ubuntu-1604: Setting up lsb-release (9.20160110ubuntu0.2) ...
+I, [2017-10-28T20:48:51.647717 #85268]  INFO -- default-ubuntu-1604: Setting up python3-pkg-resources (20.7.0-1) ...
+I, [2017-10-28T20:48:51.885324 #85268]  INFO -- default-ubuntu-1604: Setting up python3-chardet (2.3.0-2) ...
+I, [2017-10-28T20:48:52.208865 #85268]  INFO -- default-ubuntu-1604: Setting up python3-six (1.10.0-3) ...
+I, [2017-10-28T20:48:52.396660 #85268]  INFO -- default-ubuntu-1604: Setting up python3-urllib3 (1.13.1-2ubuntu0.16.04.1) ...
+I, [2017-10-28T20:48:52.588360 #85268]  INFO -- default-ubuntu-1604: Setting up python3-requests (2.9.1-3) ...
+I, [2017-10-28T20:48:52.794087 #85268]  INFO -- default-ubuntu-1604: Setting up ssh-import-id (5.5-0ubuntu1) ...
+I, [2017-10-28T20:48:52.981310 #85268]  INFO -- default-ubuntu-1604: Processing triggers for libc-bin (2.23-0ubuntu9) ...
+I, [2017-10-28T20:48:52.994170 #85268]  INFO -- default-ubuntu-1604: Processing triggers for ca-certificates (20170717~16.04.1) ...
+I, [2017-10-28T20:48:53.003639 #85268]  INFO -- default-ubuntu-1604: Updating certificates in /etc/ssl/certs...
+I, [2017-10-28T20:48:55.625732 #85268]  INFO -- default-ubuntu-1604: 148 added, 0 removed; done.
+I, [2017-10-28T20:48:55.626825 #85268]  INFO -- default-ubuntu-1604: Running hooks in /etc/ca-certificates/update.d...
+I, [2017-10-28T20:48:55.627782 #85268]  INFO -- default-ubuntu-1604: done.
+I, [2017-10-28T20:48:55.741463 #85268]  INFO -- default-ubuntu-1604: Processing triggers for systemd (229-4ubuntu19) ...
+I, [2017-10-28T20:48:58.884716 #85268]  INFO -- default-ubuntu-1604:  ---> fce365866d28
+I, [2017-10-28T20:48:59.534458 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 9201c0f5f66f
+I, [2017-10-28T20:48:59.534888 #85268]  INFO -- default-ubuntu-1604: Step 8/18 : RUN if ! getent passwd kitchen; then                 useradd -d /home/kitchen -m -s /bin/bash -p '*' kitchen;               fi
+I, [2017-10-28T20:48:59.688426 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 302d75678516
+I, [2017-10-28T20:49:00.628280 #85268]  INFO -- default-ubuntu-1604:  ---> d59af6769707
+I, [2017-10-28T20:49:00.638860 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 302d75678516
+I, [2017-10-28T20:49:00.638994 #85268]  INFO -- default-ubuntu-1604: Step 9/18 : RUN echo "kitchen ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+I, [2017-10-28T20:49:00.730921 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 6df8b0ff8c17
+I, [2017-10-28T20:49:02.246412 #85268]  INFO -- default-ubuntu-1604:  ---> 175b9ec6d91d
+I, [2017-10-28T20:49:02.253460 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 6df8b0ff8c17
+I, [2017-10-28T20:49:02.253615 #85268]  INFO -- default-ubuntu-1604: Step 10/18 : RUN echo "Defaults !requiretty" >> /etc/sudoers
+I, [2017-10-28T20:49:02.351116 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 0c0d88a878e9
+I, [2017-10-28T20:49:03.583903 #85268]  INFO -- default-ubuntu-1604:  ---> e5ab53de178b
+I, [2017-10-28T20:49:03.593252 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 0c0d88a878e9
+I, [2017-10-28T20:49:03.593319 #85268]  INFO -- default-ubuntu-1604: Step 11/18 : RUN mkdir -p /home/kitchen/.ssh
+I, [2017-10-28T20:49:03.687894 #85268]  INFO -- default-ubuntu-1604:  ---> Running in c1224ee5e0a6
+I, [2017-10-28T20:49:05.026031 #85268]  INFO -- default-ubuntu-1604:  ---> df3c8acdbc6d
+I, [2017-10-28T20:49:05.034612 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container c1224ee5e0a6
+I, [2017-10-28T20:49:05.034678 #85268]  INFO -- default-ubuntu-1604: Step 12/18 : RUN chown -R kitchen /home/kitchen/.ssh
+I, [2017-10-28T20:49:05.134063 #85268]  INFO -- default-ubuntu-1604:  ---> Running in fecfa2c88cdf
+I, [2017-10-28T20:49:06.565764 #85268]  INFO -- default-ubuntu-1604:  ---> c037efce2df9
+I, [2017-10-28T20:49:06.573614 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container fecfa2c88cdf
+I, [2017-10-28T20:49:06.573721 #85268]  INFO -- default-ubuntu-1604: Step 13/18 : RUN chmod 0700 /home/kitchen/.ssh
+I, [2017-10-28T20:49:06.681060 #85268]  INFO -- default-ubuntu-1604:  ---> Running in adf90dfb0d40
+I, [2017-10-28T20:49:08.126391 #85268]  INFO -- default-ubuntu-1604:  ---> 5df0bb7d5d27
+I, [2017-10-28T20:49:08.134664 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container adf90dfb0d40
+I, [2017-10-28T20:49:08.134877 #85268]  INFO -- default-ubuntu-1604: Step 14/18 : RUN touch /home/kitchen/.ssh/authorized_keys
+I, [2017-10-28T20:49:08.252165 #85268]  INFO -- default-ubuntu-1604:  ---> Running in dc6e11f21259
+I, [2017-10-28T20:49:09.545694 #85268]  INFO -- default-ubuntu-1604:  ---> 844b982140bd
+I, [2017-10-28T20:49:09.556815 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container dc6e11f21259
+I, [2017-10-28T20:49:09.556874 #85268]  INFO -- default-ubuntu-1604: Step 15/18 : RUN chown kitchen /home/kitchen/.ssh/authorized_keys
+I, [2017-10-28T20:49:09.654363 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 867edb1663e3
+I, [2017-10-28T20:49:11.006744 #85268]  INFO -- default-ubuntu-1604:  ---> 255cb0a969f5
+I, [2017-10-28T20:49:11.018590 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 867edb1663e3
+I, [2017-10-28T20:49:11.018744 #85268]  INFO -- default-ubuntu-1604: Step 16/18 : RUN chmod 0600 /home/kitchen/.ssh/authorized_keys
+I, [2017-10-28T20:49:11.131604 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 187b6bc3642b
+I, [2017-10-28T20:49:12.645847 #85268]  INFO -- default-ubuntu-1604:  ---> b81b6e2750b7
+I, [2017-10-28T20:49:12.654854 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 187b6bc3642b
+I, [2017-10-28T20:49:12.654935 #85268]  INFO -- default-ubuntu-1604: Step 17/18 : RUN apt-get update && apt-get install -y locales && locale-gen en_US.UTF-8
+I, [2017-10-28T20:49:12.741903 #85268]  INFO -- default-ubuntu-1604:  ---> Running in afefb1992d45
+I, [2017-10-28T20:49:14.143980 #85268]  INFO -- default-ubuntu-1604: Hit:1 http://security.ubuntu.com/ubuntu xenial-security InRelease
+I, [2017-10-28T20:49:14.193315 #85268]  INFO -- default-ubuntu-1604: Hit:2 http://archive.ubuntu.com/ubuntu xenial InRelease
+I, [2017-10-28T20:49:14.447427 #85268]  INFO -- default-ubuntu-1604: Hit:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease
+I, [2017-10-28T20:49:14.734520 #85268]  INFO -- default-ubuntu-1604: Hit:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
+I, [2017-10-28T20:49:15.700302 #85268]  INFO -- default-ubuntu-1604: Reading package lists...
+I, [2017-10-28T20:49:16.562585 #85268]  INFO -- default-ubuntu-1604: Reading package lists...
+I, [2017-10-28T20:49:16.791063 #85268]  INFO -- default-ubuntu-1604: Building dependency tree...
+I, [2017-10-28T20:49:16.791214 #85268]  INFO -- default-ubuntu-1604: Reading state information...
+I, [2017-10-28T20:49:16.989855 #85268]  INFO -- default-ubuntu-1604: The following NEW packages will be installed:
+I, [2017-10-28T20:49:16.990445 #85268]  INFO -- default-ubuntu-1604:   locales
+I, [2017-10-28T20:49:17.624158 #85268]  INFO -- default-ubuntu-1604: 0 upgraded, 1 newly installed, 0 to remove and 4 not upgraded.
+I, [2017-10-28T20:49:17.624337 #85268]  INFO -- default-ubuntu-1604: Need to get 3220 kB of archives.
+I, [2017-10-28T20:49:17.624429 #85268]  INFO -- default-ubuntu-1604: After this operation, 14.0 MB of additional disk space will be used.
+I, [2017-10-28T20:49:17.624472 #85268]  INFO -- default-ubuntu-1604: Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 locales all 2.23-0ubuntu9 [3220 kB]
+I, [2017-10-28T20:49:21.486694 #85268]  INFO -- default-ubuntu-1604: [91mdebconf: delaying package configuration, since apt-utils is not installed
+I, [2017-10-28T20:49:21.506599 #85268]  INFO -- default-ubuntu-1604: [0mFetched 3220 kB in 4s (735 kB/s)
+I, [2017-10-28T20:49:21.544343 #85268]  INFO -- default-ubuntu-1604: Selecting previously unselected package locales.
+I, [2017-10-28T20:49:21.551473 #85268]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9646 files and directories currently installed.)
+I, [2017-10-28T20:49:21.552934 #85268]  INFO -- default-ubuntu-1604: Preparing to unpack .../locales_2.23-0ubuntu9_all.deb ...
+I, [2017-10-28T20:49:21.558492 #85268]  INFO -- default-ubuntu-1604: Unpacking locales (2.23-0ubuntu9) ...
+I, [2017-10-28T20:49:22.101286 #85268]  INFO -- default-ubuntu-1604: Setting up locales (2.23-0ubuntu9) ...
+I, [2017-10-28T20:49:22.857949 #85268]  INFO -- default-ubuntu-1604: Generating locales (this might take a while)...
+I, [2017-10-28T20:49:22.872668 #85268]  INFO -- default-ubuntu-1604: Generation complete.
+I, [2017-10-28T20:49:23.001183 #85268]  INFO -- default-ubuntu-1604: Generating locales (this might take a while)...
+I, [2017-10-28T20:49:23.765157 #85268]  INFO -- default-ubuntu-1604:   en_US.UTF-8... done
+I, [2017-10-28T20:49:23.765234 #85268]  INFO -- default-ubuntu-1604: Generation complete.
+I, [2017-10-28T20:49:24.494485 #85268]  INFO -- default-ubuntu-1604:  ---> a386d48ec62a
+I, [2017-10-28T20:49:24.519251 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container afefb1992d45
+I, [2017-10-28T20:49:24.519706 #85268]  INFO -- default-ubuntu-1604: Step 18/18 : RUN echo ssh-rsa\ AAAAB3NzaC1yc2EAAAADAQABAAABAQCToOt9PdjpLdL8uWylewooMGxmTRVl3KXRpTIykmW\+IAdPHTGZrouYSmFsIkLgI707MrRRQ31bZMvwQgSVEuOb7pK1mou2Hb5iL6zoswFNApPtkBNTjtVA65vdEq0M\+KF\+9ODYHCPEgVYp4VtRUft5vvFVhqkvHSdjo13J4PrlE/iRhpsiymTF5CDKjZGsMv/my6/2iRQHr18w0keHYIdlSl2lEioY5M\+i6s6L5yFNKLY42Dy6FYlqSbrF0UlnyNl\+Ky8DveSnCfoVFslpzSTlpeGfNvWINVwd3DenAmt4duzTzAVyQ0TCQd8rc2oSwB5tvnbKcot1k7JYcjLe0HIp\ kitchen_docker_key >> /home/kitchen/.ssh/authorized_keys
+I, [2017-10-28T20:49:24.608070 #85268]  INFO -- default-ubuntu-1604:  ---> Running in 55bdb81524d2
+I, [2017-10-28T20:49:25.854739 #85268]  INFO -- default-ubuntu-1604:  ---> ae0219aa87e8
+I, [2017-10-28T20:49:25.862780 #85268]  INFO -- default-ubuntu-1604: Removing intermediate container 55bdb81524d2
+I, [2017-10-28T20:49:25.864176 #85268]  INFO -- default-ubuntu-1604: Successfully built ae0219aa87e8
+I, [2017-10-28T20:49:26.068500 #85268]  INFO -- default-ubuntu-1604: fb7aa95df83efa04287cdb8da8d4335191631a914c370b7a30e237f5cdea5220
+I, [2017-10-28T20:49:27.356574 #85268]  INFO -- default-ubuntu-1604: 0.0.0.0:32768
+I, [2017-10-28T20:49:27.381296 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:30.391469 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:33.397814 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:36.408062 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:39.416476 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:42.422994 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:45.433817 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:48.442469 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:51.452902 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:54.458777 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:49:57.467867 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:00.483517 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:03.493738 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:06.505225 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:09.512524 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:12.517400 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:15.526064 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:18.533572 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:21.544009 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:24.554200 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:27.563637 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:30.572398 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:33.582381 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:36.588986 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:39.595245 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:42.605415 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:45.616117 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:48.623074 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:51.633050 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:54.643895 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:50:57.650125 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:00.654989 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:03.663614 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:06.668550 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:09.677761 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:12.684587 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:15.693721 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:18.703756 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:21.714351 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:24.724660 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:27.734762 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:30.746347 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:33.759451 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:36.766163 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:39.770367 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:42.778178 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:45.784542 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:48.794232 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:51.802647 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:54.816756 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:51:57.823009 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:00.834437 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:03.848244 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:06.852000 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:09.858493 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:12.868449 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:15.873757 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:18.877664 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:21.890129 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:24.898995 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:27.907268 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:30.920074 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:33.927054 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:36.942172 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:39.948336 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:42.960837 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:45.974056 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:48.986537 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:51.993541 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:55.000553 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:52:58.021805 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:01.031766 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:04.049445 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:07.063327 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:10.069867 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:13.084717 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:16.097853 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:19.106088 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:22.126709 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:25.134574 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:28.149485 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:31.156942 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:34.167142 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:37.177206 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:40.186918 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:43.195308 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:46.210451 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:49.226395 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:52.240755 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:55.250033 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:53:58.265974 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:01.272101 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:04.287003 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:07.302514 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:10.316121 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:13.325873 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:16.331748 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:19.407869 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:22.412416 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:25.427794 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:28.442828 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:31.452603 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:34.467554 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:37.480877 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:40.489902 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:43.495593 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:46.507724 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:49.519388 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:52.526311 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:55.540610 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:54:58.555353 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:01.564017 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:04.570914 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:07.584485 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:10.600636 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:13.610090 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:16.620003 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:19.633505 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:22.641388 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:25.647749 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:28.658220 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:31.673377 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:34.688340 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:37.699454 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:40.714720 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:43.729877 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:46.740409 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:49.756180 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:52.770011 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:55.780767 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:55:58.790503 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:01.797071 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:04.810163 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:07.819145 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:10.828824 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:13.836641 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:16.849088 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:19.864326 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:22.879469 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:25.888528 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:28.907219 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:31.923665 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:34.933851 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:37.949616 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:40.959176 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:43.967619 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:46.981456 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:49.996707 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:53.006145 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:56.019152 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:56:59.038049 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:02.052260 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:05.067251 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:08.076912 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:11.087354 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:14.102614 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:17.112210 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:20.122810 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:23.127798 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:26.141788 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:29.155205 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:32.161687 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:35.176830 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:38.184531 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:41.243210 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:44.258029 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:47.270929 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:50.282813 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:53.293415 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:56.308153 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:57:59.322843 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:02.333645 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:05.338937 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:08.345554 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:11.357726 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:14.372521 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:17.387448 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:20.396134 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:23.400261 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:26.406649 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:29.421275 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:32.429613 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:35.443146 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:38.452321 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:41.464010 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:44.478968 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:47.488153 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:50.502157 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:53.516794 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:56.529528 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:58:59.540557 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:59:02.545300 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:59:05.560791 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:59:08.570781 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:59:11.583958 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:59:14.594075 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:59:17.608887 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:59:20.618880 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+I, [2017-10-28T20:59:23.631435 #85268]  INFO -- default-ubuntu-1604: Waiting for SSH service on localhost:32768, retrying in 3 seconds
+W, [2017-10-28T20:59:26.636889 #85268]  WARN -- default-ubuntu-1604: [SSH] connection failed, terminating (#<Net::SSH::Disconnect: connection closed by remote host>)
+E, [2017-10-28T20:59:26.637871 #85268] ERROR -- default-ubuntu-1604: Create failed on instance <default-ubuntu-1604>.
+E, [2017-10-28T20:59:26.638582 #85268] ERROR -- default-ubuntu-1604: ------Exception-------
+E, [2017-10-28T20:59:26.638633 #85268] ERROR -- default-ubuntu-1604: Class: Kitchen::Transport::SshFailed
+E, [2017-10-28T20:59:26.638662 #85268] ERROR -- default-ubuntu-1604: Message: SSH session could not be established
+E, [2017-10-28T20:59:26.638688 #85268] ERROR -- default-ubuntu-1604: ----------------------
+E, [2017-10-28T20:59:26.638801 #85268] ERROR -- default-ubuntu-1604: ------Backtrace-------
+E, [2017-10-28T20:59:26.638841 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:308:in `rescue in retry_connection'
+E, [2017-10-28T20:59:26.638891 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:290:in `retry_connection'
+E, [2017-10-28T20:59:26.638935 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:273:in `establish_connection'
+E, [2017-10-28T20:59:26.638960 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:367:in `session'
+E, [2017-10-28T20:59:26.638983 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:181:in `wait_until_ready'
+E, [2017-10-28T20:59:26.639127 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:128:in `block in create'
+E, [2017-10-28T20:59:26.639160 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/base.rb:89:in `initialize'
+E, [2017-10-28T20:59:26.639185 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:439:in `new'
+E, [2017-10-28T20:59:26.639208 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:439:in `create_new_connection'
+E, [2017-10-28T20:59:26.639245 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:90:in `connection'
+E, [2017-10-28T20:59:26.639267 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:127:in `create'
+E, [2017-10-28T20:59:26.639289 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-10-28T20:59:26.639310 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-10-28T20:59:26.639334 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-10-28T20:59:26.639356 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-10-28T20:59:26.639379 #85268] ERROR -- default-ubuntu-1604: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2017-10-28T20:59:26.639416 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-10-28T20:59:26.639439 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-10-28T20:59:26.639551 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-10-28T20:59:26.639578 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-10-28T20:59:26.639602 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-10-28T20:59:26.639624 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-10-28T20:59:26.639664 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-10-28T20:59:26.639688 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:186:in `block in test'
+E, [2017-10-28T20:59:26.639707 #85268] ERROR -- default-ubuntu-1604: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2017-10-28T20:59:26.639742 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:182:in `test'
+E, [2017-10-28T20:59:26.639765 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-10-28T20:59:26.639786 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-10-28T20:59:26.639807 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-10-28T20:59:26.639829 #85268] ERROR -- default-ubuntu-1604: ----End Backtrace-----
+E, [2017-10-28T20:59:26.639848 #85268] ERROR -- default-ubuntu-1604: ---Nested Exception---
+E, [2017-10-28T20:59:26.639868 #85268] ERROR -- default-ubuntu-1604: Class: Net::SSH::Disconnect
+E, [2017-10-28T20:59:26.639938 #85268] ERROR -- default-ubuntu-1604: Message: connection closed by remote host
+E, [2017-10-28T20:59:26.639963 #85268] ERROR -- default-ubuntu-1604: ----------------------
+E, [2017-10-28T20:59:26.639982 #85268] ERROR -- default-ubuntu-1604: ------Backtrace-------
+E, [2017-10-28T20:59:26.640000 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:308:in `rescue in retry_connection'
+E, [2017-10-28T20:59:26.640035 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:290:in `retry_connection'
+E, [2017-10-28T20:59:26.640054 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:273:in `establish_connection'
+E, [2017-10-28T20:59:26.640072 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:367:in `session'
+E, [2017-10-28T20:59:26.640091 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:181:in `wait_until_ready'
+E, [2017-10-28T20:59:26.640109 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:128:in `block in create'
+E, [2017-10-28T20:59:26.640127 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/base.rb:89:in `initialize'
+E, [2017-10-28T20:59:26.640159 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:439:in `new'
+E, [2017-10-28T20:59:26.640230 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:439:in `create_new_connection'
+E, [2017-10-28T20:59:26.640250 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/transport/ssh.rb:90:in `connection'
+E, [2017-10-28T20:59:26.640284 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:127:in `create'
+E, [2017-10-28T20:59:26.640302 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-10-28T20:59:26.640337 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-10-28T20:59:26.640357 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-10-28T20:59:26.640376 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-10-28T20:59:26.640419 #85268] ERROR -- default-ubuntu-1604: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2017-10-28T20:59:26.640449 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-10-28T20:59:26.640468 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-10-28T20:59:26.640498 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-10-28T20:59:26.640517 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-10-28T20:59:26.640534 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-10-28T20:59:26.640552 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-10-28T20:59:26.640583 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-10-28T20:59:26.640602 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:186:in `block in test'
+E, [2017-10-28T20:59:26.640629 #85268] ERROR -- default-ubuntu-1604: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2017-10-28T20:59:26.640648 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:182:in `test'
+E, [2017-10-28T20:59:26.640666 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-10-28T20:59:26.640684 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-10-28T20:59:26.640708 #85268] ERROR -- default-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-10-28T20:59:26.640728 #85268] ERROR -- default-ubuntu-1604: ----End Backtrace-----

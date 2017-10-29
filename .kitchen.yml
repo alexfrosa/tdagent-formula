@@ -1,0 +1,54 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: salt_solo
+  require_chef: false
+  formula: td-agent
+  state_top:
+    base:
+      '*':
+        - td-agent
+
+
+platforms:
+  - name: ubuntu-16.04
+    driver_config:
+      provision_command:
+        - apt-get update && apt-get install -y locales && locale-gen en_US.UTF-8
+      run_command: /sbin/init
+
+suites:
+  - name: default
+  - name: with-pillar-set
+    provisioner:
+      pillars:
+        top.sls:
+          base:
+            '*':
+              - td-agent
+        td-agent.sls:
+          td-agent:
+            plugins:
+              - fluent-plugin-netflow
+              - fluent-plugin-elasticsearch
+            sources:
+              netflow:
+                type: netflow
+                tag: elasticsearch
+                bind: 0.0.0.0
+                port: 2055
+            matches:
+              elasticsearch:
+                type: elasticsearch
+                logstash_format: 'true'
+                include_timestamp: 'true'
+                logstash_prefix: logstash
+                host: 10.28.30.34
+                port: 9200
+
+verifier:
+  name: shell
+  remote_exec: false
+  command: testinfra -vvv --connection=docker --hosts=root@$KITCHEN_CONTAINER_ID --junit-xml junit-$KITCHEN_INSTANCE.xml test/integration/$KITCHEN_SUITE

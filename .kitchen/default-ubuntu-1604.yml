@@ -1,0 +1,8 @@
+---
+username: kitchen
+ssh_key: /Users/alexros/Dev/intelics/src/CodeCommitIntelics/saltstack-dev/td-agent-formula/.kitchen/docker_id_rsa
+image_id: ae0219aa87e8
+container_id: fb7aa95df83efa04287cdb8da8d4335191631a914c370b7a30e237f5cdea5220
+hostname: localhost
+port: 32768
+last_error: Kitchen::Transport::SshFailed

@@ -1,0 +1,4 @@
+---
+username: kitchen
+ssh_key: /Users/alexros/Dev/intelics/src/CodeCommitIntelics/saltstack-dev/td-agent-formula/.kitchen/docker_id_rsa
+last_error: Kitchen::ShellOut::ShellCommandFailed

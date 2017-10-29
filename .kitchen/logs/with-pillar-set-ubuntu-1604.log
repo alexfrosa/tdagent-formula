@@ -1,0 +1,75 @@
+I, [2017-10-28T20:59:26.646830 #85268]  INFO -- with-pillar-set-ubuntu-1604: -----> Cleaning up any prior instances of <with-pillar-set-ubuntu-1604>
+I, [2017-10-28T20:59:26.647283 #85268]  INFO -- with-pillar-set-ubuntu-1604: -----> Destroying <with-pillar-set-ubuntu-1604>...
+I, [2017-10-28T20:59:26.649009 #85268]  INFO -- with-pillar-set-ubuntu-1604: Finished destroying <with-pillar-set-ubuntu-1604> (0m0.00s).
+I, [2017-10-28T20:59:26.649726 #85268]  INFO -- with-pillar-set-ubuntu-1604: -----> Testing <with-pillar-set-ubuntu-1604>
+I, [2017-10-28T20:59:26.649894 #85268]  INFO -- with-pillar-set-ubuntu-1604: -----> Creating <with-pillar-set-ubuntu-1604>...
+I, [2017-10-28T20:59:26.676709 #85268]  INFO -- with-pillar-set-ubuntu-1604: sudo: no tty present and no askpass program specified
+E, [2017-10-28T20:59:26.692660 #85268] ERROR -- with-pillar-set-ubuntu-1604: Create failed on instance <with-pillar-set-ubuntu-1604>.
+E, [2017-10-28T20:59:26.692790 #85268] ERROR -- with-pillar-set-ubuntu-1604: ------Exception-------
+E, [2017-10-28T20:59:26.692826 #85268] ERROR -- with-pillar-set-ubuntu-1604: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2017-10-28T20:59:26.692852 #85268] ERROR -- with-pillar-set-ubuntu-1604: Message: Expected process to exit with [0], but received '1'
+---- Begin output of sudo -E docker -H unix:///var/run/docker.sock build -f /Users/alexros/Dev/intelics/src/CodeCommitIntelics/saltstack-dev/td-agent-formula/Dockerfile-kitchen20171028-85268-1ehbawn . ----
+STDOUT: 
+STDERR: sudo: no tty present and no askpass program specified
+---- End output of sudo -E docker -H unix:///var/run/docker.sock build -f /Users/alexros/Dev/intelics/src/CodeCommitIntelics/saltstack-dev/td-agent-formula/Dockerfile-kitchen20171028-85268-1ehbawn . ----
+Ran sudo -E docker -H unix:///var/run/docker.sock build -f /Users/alexros/Dev/intelics/src/CodeCommitIntelics/saltstack-dev/td-agent-formula/Dockerfile-kitchen20171028-85268-1ehbawn . returned 1
+E, [2017-10-28T20:59:26.692878 #85268] ERROR -- with-pillar-set-ubuntu-1604: ----------------------
+E, [2017-10-28T20:59:26.692899 #85268] ERROR -- with-pillar-set-ubuntu-1604: ------Backtrace-------
+E, [2017-10-28T20:59:26.692919 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-10-28T20:59:26.692946 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-10-28T20:59:26.692975 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:158:in `docker_command'
+E, [2017-10-28T20:59:26.692998 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:310:in `build_image'
+E, [2017-10-28T20:59:26.693017 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:122:in `create'
+E, [2017-10-28T20:59:26.693036 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-10-28T20:59:26.693054 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-10-28T20:59:26.693102 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-10-28T20:59:26.693121 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-10-28T20:59:26.693139 #85268] ERROR -- with-pillar-set-ubuntu-1604: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2017-10-28T20:59:26.693165 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-10-28T20:59:26.693205 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-10-28T20:59:26.693224 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-10-28T20:59:26.693242 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-10-28T20:59:26.693260 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-10-28T20:59:26.693278 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-10-28T20:59:26.693296 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-10-28T20:59:26.693314 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:186:in `block in test'
+E, [2017-10-28T20:59:26.693332 #85268] ERROR -- with-pillar-set-ubuntu-1604: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2017-10-28T20:59:26.693351 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:182:in `test'
+E, [2017-10-28T20:59:26.693384 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-10-28T20:59:26.693404 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-10-28T20:59:26.693425 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-10-28T20:59:26.693443 #85268] ERROR -- with-pillar-set-ubuntu-1604: ----End Backtrace-----
+E, [2017-10-28T20:59:26.693461 #85268] ERROR -- with-pillar-set-ubuntu-1604: ---Nested Exception---
+E, [2017-10-28T20:59:26.693479 #85268] ERROR -- with-pillar-set-ubuntu-1604: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2017-10-28T20:59:26.693499 #85268] ERROR -- with-pillar-set-ubuntu-1604: Message: Expected process to exit with [0], but received '1'
+---- Begin output of sudo -E docker -H unix:///var/run/docker.sock build -f /Users/alexros/Dev/intelics/src/CodeCommitIntelics/saltstack-dev/td-agent-formula/Dockerfile-kitchen20171028-85268-1ehbawn . ----
+STDOUT: 
+STDERR: sudo: no tty present and no askpass program specified
+---- End output of sudo -E docker -H unix:///var/run/docker.sock build -f /Users/alexros/Dev/intelics/src/CodeCommitIntelics/saltstack-dev/td-agent-formula/Dockerfile-kitchen20171028-85268-1ehbawn . ----
+Ran sudo -E docker -H unix:///var/run/docker.sock build -f /Users/alexros/Dev/intelics/src/CodeCommitIntelics/saltstack-dev/td-agent-formula/Dockerfile-kitchen20171028-85268-1ehbawn . returned 1
+E, [2017-10-28T20:59:26.693517 #85268] ERROR -- with-pillar-set-ubuntu-1604: ----------------------
+E, [2017-10-28T20:59:26.693535 #85268] ERROR -- with-pillar-set-ubuntu-1604: ------Backtrace-------
+E, [2017-10-28T20:59:26.693552 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-10-28T20:59:26.693576 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-10-28T20:59:26.693658 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:158:in `docker_command'
+E, [2017-10-28T20:59:26.693697 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:310:in `build_image'
+E, [2017-10-28T20:59:26.693712 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:122:in `create'
+E, [2017-10-28T20:59:26.693724 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-10-28T20:59:26.693735 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-10-28T20:59:26.693747 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-10-28T20:59:26.693768 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-10-28T20:59:26.693780 #85268] ERROR -- with-pillar-set-ubuntu-1604: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2017-10-28T20:59:26.693792 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-10-28T20:59:26.693803 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-10-28T20:59:26.693815 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-10-28T20:59:26.693826 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-10-28T20:59:26.693837 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-10-28T20:59:26.693849 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-10-28T20:59:26.693868 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-10-28T20:59:26.693880 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:186:in `block in test'
+E, [2017-10-28T20:59:26.693921 #85268] ERROR -- with-pillar-set-ubuntu-1604: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2017-10-28T20:59:26.693933 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:182:in `test'
+E, [2017-10-28T20:59:26.693944 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-10-28T20:59:26.693956 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-10-28T20:59:26.693975 #85268] ERROR -- with-pillar-set-ubuntu-1604: /Users/alexros/Dev/intelics/rubysandbox/rubygems/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-10-28T20:59:26.693988 #85268] ERROR -- with-pillar-set-ubuntu-1604: ----End Backtrace-----

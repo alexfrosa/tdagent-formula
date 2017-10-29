@@ -1,0 +1,13 @@
+{% set tdagent = salt['grains.filter_by']({
+    'default': {
+        'config_path': '/etc/td-agent/td-agent.conf',
+        'service': 'td-agent'
+    },
+    'Ubuntu': {
+        'config_path': '/etc/td-agent/td-agent.conf',
+        'service': 'td-agent'
+    }
+},
+merge=salt['pillar.get']('tdagent:lookup', {}),
+default='default')
+%}
