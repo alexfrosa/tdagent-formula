@@ -1,5 +1,5 @@
-{% if salt['pillar.get']('td-agent:plugins', False) -%}
-{%- set plugins = salt['pillar.get']('td-agent:plugins', {}) %}
+{% if salt['pillar.get']('tdagent:plugins', False) -%}
+{%- set plugins = salt['pillar.get']('tdagent:plugins', {}) %}
   {%- for name in plugins %}
 tdagent_install_plugin_{{ name }}:
   cmd.run:
