@@ -3,3 +3,5 @@ tests/build/
 *.swp
 *.pyc
 .ropeproject
+.cache
+junit*

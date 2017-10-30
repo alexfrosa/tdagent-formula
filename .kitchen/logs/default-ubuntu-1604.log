@@ -1,4 +1,0 @@
-I, [2017-10-30T20:33:25.338374 #5084]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
-I, [2017-10-30T20:33:25.338988 #5084]  INFO -- default-ubuntu-1604: Preparing files for transfer
-I, [2017-10-30T20:33:25.339294 #5084]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
-I, [2017-10-30T20:33:25.340723 #5084]  INFO -- default-ubuntu-1604: Finished verifying <default-ubuntu-1604> (0m0.00s).

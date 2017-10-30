@@ -1,3 +1,0 @@
-I, [2017-10-30T20:33:25.341199 #5084]  INFO -- with-pillar-set-ubuntu-1604: -----> Verifying <with-pillar-set-ubuntu-1604>...
-I, [2017-10-30T20:33:25.341591 #5084]  INFO -- with-pillar-set-ubuntu-1604: [Shell] Verify on instance=#<Kitchen::Instance:0x000000027bf7a8> with state={:username=>"kitchen", :ssh_key=>"/home/alexfr/Dev/intelics/src/tdagent-formula/.kitchen/docker_id_rsa", :image_id=>"e4e4d64da203", :container_id=>"314852b696b8c44cceae9515c4e8e16e182af9da279f8617e44d1fa49fd8262c", :hostname=>"localhost", :port=>32777, :last_action=>"setup", :last_error=>"Kitchen::ActionFailed"}
-I, [2017-10-30T20:33:26.008721 #5084]  INFO -- with-pillar-set-ubuntu-1604: Finished verifying <with-pillar-set-ubuntu-1604> (0m0.67s).
