@@ -5,5 +5,5 @@ image_id: e4e4d64da203
 container_id: 314852b696b8c44cceae9515c4e8e16e182af9da279f8617e44d1fa49fd8262c
 hostname: localhost
 port: 32777
-last_action: setup
-last_error: Kitchen::ActionFailed
+last_action: verify
+last_error: 

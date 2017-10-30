@@ -31,7 +31,7 @@ suites:
             '*':
               - td-agent
         td-agent.sls:
-          td-agent:
+          tdagent:
             plugins:
               - fluent-plugin-netflow
               - fluent-plugin-elasticsearch
