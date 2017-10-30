@@ -1,9 +1,0 @@
----
-username: kitchen
-ssh_key: "/home/alexfr/Dev/intelics/src/tdagent-formula/.kitchen/docker_id_rsa"
-image_id: 5bd5af1f6c7e
-container_id: d702fedd8acb5e6f00bd132a7fee692f87b57f9fbccf4935dea368ceeac10032
-hostname: localhost
-port: 32780
-last_action: create
-last_error: 
