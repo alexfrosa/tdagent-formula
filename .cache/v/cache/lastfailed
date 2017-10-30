@@ -1,0 +1,3 @@
+{
+  "test/integration/test_tdagent.py::test_service_is_running_and_enabled[local]": true
+}

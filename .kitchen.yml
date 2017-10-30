@@ -49,8 +49,7 @@ suites:
                 logstash_prefix: logstash
                 host: 10.28.30.34
                 port: 9200
-
-verifier:
-  name: shell
-  remote_exec: false
-  command: testinfra -vvv --connection=docker --hosts=root@$KITCHEN_CONTAINER_ID --junit-xml junit-$KITCHEN_INSTANCE.xml test/integration/$KITCHEN_SUITE
+    verifier:
+      name: shell
+      remote_exec: false
+      command: testinfra -vvv --connection=docker --hosts=root@$KITCHEN_CONTAINER_ID --junit-xml junit-$KITCHEN_INSTANCE.xml test/integration/$KITCHEN_SUITE
