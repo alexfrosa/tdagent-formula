@@ -30,7 +30,7 @@ Installs the td-agent package
 Configures td-agent input/output plugins
 
 Requirements
-------------
+============
 
 * Python
 * Ruby
