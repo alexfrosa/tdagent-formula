@@ -52,7 +52,7 @@ suites:
                 logstash_format: 'true'
                 include_timestamp: 'true'
                 logstash_prefix: logstash
-                host: 10.28.30.34
+                host: 127.0.0.1 
                 port: 9200
     verifier:
       name: shell
